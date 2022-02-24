@@ -69,7 +69,7 @@ for (let i = 0; i < ages.length; i++) {
   console.log(ages[i]);
 }
 */
-
+/*
 const arr = ["Ibrohim", "Fayzullayev", "Developer", 21, "Tashkent", 2001];
 
 for (let i = 0; i < arr.length; i++) {
@@ -78,3 +78,19 @@ for (let i = 0; i < arr.length; i++) {
   }
   console.log(arr[i]);
 }
+*/
+
+let arr = new Array(12, 5, 16, -15, 10);
+let max = arr[0];
+let min = arr[0];
+for (let i = 0; i < arr.length; i++) {
+  if (max < arr[i]) {
+    max = arr[i];
+  }
+  if (min > arr[i]) {
+    min = arr[i];
+  }
+}
+console.log(max);
+console.log(min);
+console.log(max - min);
