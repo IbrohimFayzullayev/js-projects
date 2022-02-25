@@ -197,7 +197,7 @@ while (!(sonlar > 5 && sonlar % 2 == 1)) {
 }
 console.log(`${sonlar} tugadi`);
 */
-
+/*
 let i = 0;
 while (true) {
   console.log(i);
@@ -205,4 +205,10 @@ while (true) {
     break;
   }
   i++;
+}
+*/
+let n = 6;
+let char = "#";
+for (let i = 0; i < n; i++) {
+  console.log(char);
 }
