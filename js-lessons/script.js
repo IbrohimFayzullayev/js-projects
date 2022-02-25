@@ -123,7 +123,7 @@ console.log(oxshash.length);
 // let twoSum = function (nums, target) {
 //   let nums = [2, 7, 10, 12];
 // };
-
+/*
 let bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let usluga = [];
 let total = [];
@@ -147,3 +147,21 @@ let calc = function () {
 };
 
 calc();
+*/
+// let object = {
+//   job: "coder",
+//   age: "21",
+// };
+// let arr = new Array("salom", "dunyo", object);
+// console.log(arr);
+
+let arr = new Array(12, 12, 12, 12);
+
+let ortacha = function (arrs) {
+  let sum = 0;
+  for (let i = 0; i < arrs.length; i++) {
+    sum = sum + arrs[i];
+  }
+  return sum / arrs.length;
+};
+console.log(ortacha(arr));
