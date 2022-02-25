@@ -79,7 +79,7 @@ for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
 */
-
+/*
 let arr = new Array(12, 5, 16, -15, 10);
 let max = arr[0];
 let min = arr[0];
@@ -94,3 +94,56 @@ for (let i = 0; i < arr.length; i++) {
 console.log(max);
 console.log(min);
 console.log(max - min);
+*/
+/*
+let oxshash = "abbssa";
+// if(oxshash)
+console.log(oxshash[0]);
+console.log(oxshash[oxshash.length - 1]);
+if (oxshash[0] === oxshash[oxshash.length - 1]) {
+  console.log(`bu soz boshi  oxiri oxshash`);
+} else {
+  console.log(`bu oxshash emas`);
+}
+console.log(oxshash.length);
+*/
+// let pol = "kiyik";
+// let b = pol.split("");
+// let a = [];
+// for (let i = b.length - 1; i > -1; i--) {
+//   a.push(b[i]);
+// }
+// let w = a.join("");
+// if (w === pol) {
+//   console.log("polindrom");
+// } else {
+//   console.log("no");
+// }
+
+// let twoSum = function (nums, target) {
+//   let nums = [2, 7, 10, 12];
+// };
+
+let bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let usluga = [];
+let total = [];
+let calc = function () {
+  for (let i = 0; i < bill.length; i++) {
+    if (bill[i] < 50 || bill[i] > 300) {
+      let a = bill[i] * 0.2;
+      let c = bill[i] + a;
+      usluga.push(a);
+      total.push(c);
+    } else if (bill[i] >= 50 && bill[i] <= 300) {
+      let a = bill[i] * 0.15;
+      let c = bill[i] + a;
+      usluga.push(a);
+      total.push(c);
+    } else {
+      console.log("xato");
+    }
+  }
+  console.log(total);
+};
+
+calc();
