@@ -154,7 +154,7 @@ calc();
 // };
 // let arr = new Array("salom", "dunyo", object);
 // console.log(arr);
-
+/*
 let arr = new Array(12, 12, 12, 12);
 
 let ortacha = function (arrs) {
@@ -165,3 +165,44 @@ let ortacha = function (arrs) {
   return sum / arrs.length;
 };
 console.log(ortacha(arr));
+*/
+
+// ** 25.02.2022
+/*
+let week = new Array(
+  `Dushanba`,
+  `Seshanba`,
+  `Chorshanba`,
+  `Payshanba`,
+  `Juma`,
+  `Shanba`,
+  `Yakshanba`
+);
+let incre = 2;
+for (let i = 0; i < week.length; i++) {
+  console.log(`Bugun: ${week[i]}`);
+  let summa = 0;
+  for (let j = 1; j < incre; j++) {
+    summa++;
+  }
+  console.log(`${week[i]}: kuni ${summa} para dars bor`);
+  incre++;
+}
+*/
+/*
+let sonlar = Math.trunc(Math.random() * 9) + 1;
+while (!(sonlar > 5 && sonlar % 2 == 1)) {
+  console.log(`${sonlar} xali chiqmadi`);
+  sonlar = Math.trunc(Math.random() * 9) + 1;
+}
+console.log(`${sonlar} tugadi`);
+*/
+
+let i = 0;
+while (true) {
+  console.log(i);
+  if (i == 10) {
+    break;
+  }
+  i++;
+}
