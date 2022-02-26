@@ -384,6 +384,7 @@ function gradingStudents(grades) {
 }
 gradingStudents(grade);
 */
+/*
 let arr = [5, 4, 4, 2, 2, 8];
 function cutTheSticks(arr) {
   let min = arr[0];
@@ -401,3 +402,26 @@ function cutTheSticks(arr) {
   return arr;
 }
 console.log(cutTheSticks(arr));
+*/
+/*
+let score = [10, 5, 20, 20, 4, 5, 2, 25, 1];
+
+function breakingRecords(scores) {
+  let min = scores[0];
+  let max = scores[0];
+  let arr = [0, 0];
+  for (let i = 1; i < scores.length; i++) {
+    if (min > scores[i]) {
+      min = scores[i];
+      arr[1]++;
+    } else if (max < scores[i]) {
+      max = scores[i];
+      arr[0]++;
+    } else {
+      continue;
+    }
+  }
+  return arr;
+}
+console.log(breakingRecords(score));
+*/
