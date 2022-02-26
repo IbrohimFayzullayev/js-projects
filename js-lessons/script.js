@@ -336,7 +336,7 @@ staircase(5);
 // console.log(num3);
 // let num4 = num1 + num3;
 // console.log(num4);
-
+/*
 let time = "12:45:45AM";
 function timeConversion(s) {
   let str = Number(s.substring(0, 2));
@@ -355,4 +355,49 @@ function timeConversion(s) {
     return num3;
   }
 }
-console.log(timeConversion(time));
+console.log(timeConversion(time));*/
+//HackerLand University has the following grading policy:
+// let num = 67;
+// if (num % 5 > 2) {
+//   let sum = Math.trunc(num / 5) + 1;
+//   let summa = sum * 5;
+//   console.log(summa);
+// } else {
+//   console.log(num);
+// }
+/*
+let grade = [73, 67, 38, 33, 84];
+function gradingStudents(grades) {
+  for (let i = 0; i < grades.length; i++) {
+    if (grades[i] > 35) {
+      if (grades[i] % 5 > 2) {
+        let sum = Math.trunc(grades[i] / 5) + 1;
+        let summa = sum * 5;
+        console.log(summa);
+      } else {
+        console.log(grades[i]);
+      }
+    } else {
+      console.log(grades[i]);
+    }
+  }
+}
+gradingStudents(grade);
+*/
+let arr = [5, 4, 4, 2, 2, 8];
+function cutTheSticks(arr) {
+  let min = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (min > arr[i]) {
+      min = arr[i];
+    }
+  }
+  let x;
+  for (let i = 0; i < arr.length; i++) {
+    x = arr[i] - min;
+    arr.splice(i, 1, x);
+  }
+  console.log(arr.length);
+  return arr;
+}
+console.log(cutTheSticks(arr));
