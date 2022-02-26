@@ -442,6 +442,7 @@ function birthday(s, d, m) {
 }
 console.log(birthday(s, 4, 2));
 */
+/*
 let ar = [1, 2, 3, 4, 5, 6];
 function divisibleSumPairs(k, ar) {
   // Write your code here
@@ -461,3 +462,42 @@ function divisibleSumPairs(k, ar) {
   return count;
 }
 console.log(divisibleSumPairs(5, ar));
+*/
+let arr = [1, 4, 4, 4, 5, 3];
+let arrs = arr.sort();
+console.log(arrs[0]);
+function migratoryBirds(arr) {
+  let sorted = arr.sort();
+  let ans = sorted[0];
+  let maxOccur = 1,
+    counter = 0;
+  for (let i = 0; i < sorted.length; i++) {
+    counter = sorted[i] === sorted[i - 1] ? counter + 1 : 0;
+    if (counter > maxOccur) {
+      ans = sorted[i];
+      maxOccur = counter;
+    }
+  }
+
+  return ans;
+}
+console.log(migratoryBirds(arr));
+/*
+function migratoryBirds(arr) {
+  let num;
+  let count1;
+  let str = 0;
+  for (let i = 0; i < arr.length; i++) {
+    count1 = 0;
+    for (let j = i; j < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        count1++;
+      }
+    }
+    if (count1 > str) {
+      str = count1;
+      num = arr[i];
+    }
+  }
+  return num;
+}*/
