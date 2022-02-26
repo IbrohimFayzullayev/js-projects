@@ -269,6 +269,7 @@ for (let i = 0, j = 5; i < 5, j > 0; i++, j--) {
 }
 // console.log(str);
 */
+/*
 let arr = [1, 2, 3, 4, 5];
 function miniMaxSum(arr) {
   // Write your code here
@@ -302,3 +303,56 @@ function miniMaxSum(arr) {
 }
 // console.log(miniMaxSum(arr));
 miniMaxSum(arr);
+*/
+
+// function hour(time){
+//   if(time[time.length - 2]==="P"){
+//     let s=Number
+//   }
+
+// }
+/*
+function staircase(n) {
+  let str = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n - i; j++) {
+      str += " ";
+    }
+    for (let k = n - i; k < n; k++) {
+      str += "#";
+    }
+    str += "\n";
+  }
+  console.log(str);
+}
+staircase(5);
+*/
+
+// console.log(time);
+// console.log(time.substring(0, 2));
+// let num1 = String(Number(time.substring(0, 2)) + 12);
+// console.log(num1);
+// let num3 = time.substring(2, time.length - 2);
+// console.log(num3);
+// let num4 = num1 + num3;
+// console.log(num4);
+
+let time = "12:45:45AM";
+function timeConversion(s) {
+  let str = Number(s.substring(0, 2));
+  if (s[s.length - 2] == "P" && str < 12) {
+    let num = String(Number(s.substring(0, 2)) + 12);
+    let num1 = s.substring(2, s.length - 2);
+    let num2 = num + num1;
+    return num2;
+  } else if (str >= 12 && s[s.length - 2] == "A") {
+    let num4 = String(Number(s.substring(0, 2)) - 12);
+    let num5 = s.substring(2, s.length - 2);
+    let num6 = num4 + "0" + num5;
+    return num6;
+  } else if (s[s.length - 2] == "A" || s[s.length - 2] == "P") {
+    let num3 = s.substring(0, s.length - 2);
+    return num3;
+  }
+}
+console.log(timeConversion(time));
