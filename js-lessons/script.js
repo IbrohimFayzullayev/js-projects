@@ -214,7 +214,7 @@ for (let i = 0; i < n; i++) {
   console.log(char);
 }
 */
-
+/*
 let arr = [
   [11, 2, 4],
   [4, 5, 6],
@@ -233,3 +233,28 @@ function diagonalDifference(arr) {
   return Math.abs(sum1 - sum2);
 }
 console.log(diagonalDifference(arr));
+*/
+// function plusMinus
+let arr = [-4, 3, -9, 0, 4, 1];
+function plusMinus(arr) {
+  let num1 = 0;
+  let num2 = 0;
+  let num3 = 0;
+  let num = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      num1++;
+    } else if (arr[i] < 0) {
+      num2++;
+    } else if (arr[i] === 0) {
+      num3++;
+    } else {
+      continue;
+    }
+  }
+  num.push(num1 / arr.length);
+  num.push(num2 / arr.length);
+  num.push(num3 / arr.length);
+  return num, num1 / arr.length;
+}
+console.log(plusMinus(arr));
