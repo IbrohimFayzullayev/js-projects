@@ -235,6 +235,7 @@ function diagonalDifference(arr) {
 console.log(diagonalDifference(arr));
 */
 // function plusMinus
+/*
 let arr = [-4, 3, -9, 0, 4, 1];
 function plusMinus(arr) {
   let num1 = 0;
@@ -255,6 +256,49 @@ function plusMinus(arr) {
   num.push(num1 / arr.length);
   num.push(num2 / arr.length);
   num.push(num3 / arr.length);
-  return num, num1 / arr.length;
+  return num;
 }
 console.log(plusMinus(arr));
+*/
+// Staircase
+/*
+let str = "";
+for (let i = 0, j = 5; i < 5, j > 0; i++, j--) {
+  str = str + "#";
+  console.log(str);
+}
+// console.log(str);
+*/
+let arr = [1, 2, 3, 4, 5];
+function miniMaxSum(arr) {
+  // Write your code here
+  let min = arr[0];
+  let max = arr[0];
+  let sum = 0;
+  let minMax = [];
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (min > arr[i]) {
+      min = arr[i];
+    } else {
+      continue;
+    }
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (max < arr[i]) {
+      max = arr[i];
+    } else {
+      continue;
+    }
+  }
+  let minSum = sum - max;
+  let maxSum = sum - min;
+  // minMax.push(minSum);
+  // minMax.push(maxSum);
+  console.log(minSum, maxSum);
+  // return minMax;
+}
+// console.log(miniMaxSum(arr));
+miniMaxSum(arr);
