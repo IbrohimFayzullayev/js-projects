@@ -463,6 +463,7 @@ function divisibleSumPairs(k, ar) {
 }
 console.log(divisibleSumPairs(5, ar));
 */
+/*
 let arr = [1, 4, 4, 4, 5, 3];
 let arrs = arr.sort();
 console.log(arrs[0]);
@@ -482,6 +483,7 @@ function migratoryBirds(arr) {
   return ans;
 }
 console.log(migratoryBirds(arr));
+*/
 /*
 function migratoryBirds(arr) {
   let num;
@@ -501,3 +503,13 @@ function migratoryBirds(arr) {
   }
   return num;
 }*/
+
+// function extraLongFactorials(n) {
+//   // Write your code here
+//   let s = 1;
+//   for (let i = n; i > 0; i--) {
+//     s = s * i;
+//   }
+//   return BigInt(s);
+// }
+// console.log(extraLongFactorials(25));
