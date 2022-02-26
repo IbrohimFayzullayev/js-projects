@@ -207,8 +207,29 @@ while (true) {
   i++;
 }
 */
+/*
 let n = 6;
 let char = "#";
 for (let i = 0; i < n; i++) {
   console.log(char);
 }
+*/
+
+let arr = [
+  [11, 2, 4],
+  [4, 5, 6],
+  [10, 8, -12],
+];
+function diagonalDifference(arr) {
+  // Write your code here
+  let sum1 = 0;
+  for (let i = 0, j = 0; i < arr.length; i++, j++) {
+    sum1 = sum1 + arr[i][j];
+  }
+  let sum2 = 0;
+  for (let i = 0, j = arr.length - 1; i < arr.length, j >= 0; i++, j--) {
+    sum2 = sum2 + arr[i][j];
+  }
+  return Math.abs(sum1 - sum2);
+}
+console.log(diagonalDifference(arr));
