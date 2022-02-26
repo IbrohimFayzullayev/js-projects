@@ -425,6 +425,7 @@ function breakingRecords(scores) {
 }
 console.log(breakingRecords(score));
 */
+/*
 let s = [2, 2, 1, 3, 2];
 function birthday(s, d, m) {
   let count = 0;
@@ -440,3 +441,23 @@ function birthday(s, d, m) {
   return count;
 }
 console.log(birthday(s, 4, 2));
+*/
+let ar = [1, 2, 3, 4, 5, 6];
+function divisibleSumPairs(k, ar) {
+  // Write your code here
+  let count = 0;
+
+  for (let i = 0; i < ar.length; i++) {
+    let sum;
+    for (let j = i + 1; j < ar.length; j++) {
+      sum = ar[i] + ar[j];
+      if (sum % 5 == 0) {
+        count++;
+      } else {
+        continue;
+      }
+    }
+  }
+  return count;
+}
+console.log(divisibleSumPairs(5, ar));
