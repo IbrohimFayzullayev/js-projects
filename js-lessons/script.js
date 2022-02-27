@@ -513,3 +513,17 @@ function migratoryBirds(arr) {
 //   return BigInt(s);
 // }
 // console.log(extraLongFactorials(25));
+/*
+let year = 2017;
+function dayOfProgrammer(year) {
+  // Write your code here
+  let num;
+  if (year % 4 == 0) {
+    num = "12.09." + String(year);
+  } else {
+    num = "13.09." + String(year);
+  }
+  return num;
+}
+console.log(dayOfProgrammer(year));
+*/
