@@ -527,3 +527,56 @@ function dayOfProgrammer(year) {
 }
 console.log(dayOfProgrammer(year));
 */
+// let ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
+// function sockMerchant(n, ar) {
+//   let count = 0;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = i; j < n; j++) {
+//       if (ar[i] == ar[j]) {
+//       }
+//     }
+//   }
+// }
+
+// let str = "salomssddfS";
+// let str1 = str.lastIndexOf("s");
+// let str2 = str[0];
+// console.log(str1);
+// console.log(str.slice(-1));
+// console.log(str.substring(3, 1));
+// let strr = "Assalom TATU";
+// let s1 = strr.lastIndexOf("s");
+// let s2 = strr.indexOf("o");
+// let s3 = strr.indexOf("T");
+// let s4 = strr.lastIndexOf("U");
+// let s5 = strr.slice(s1, s2) + strr[s3] + strr[s4];
+// console.log(s5);
+// let swq = str.toUpperCase();
+// console.log(swq);
+
+// concat
+// trim
+
+// let myStr1 = " Sa";
+// let myStr2 = "lom";
+// let myStr3 = "alik";
+// let myStr4 = "vassalom";
+// let full = "";
+// // full = full.concat(myStr1, myStr2);
+// myStr1 = myStr1.concat(myStr2, myStr3, myStr4, " nima");
+// console.log(myStr1);
+// console.log(myStr1.trim());
+// console.log(myStr1.trimStart());
+
+// let newStr = "Salom salom alik";
+// let arr = newStr.split("");
+// let arr2 = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] !== " ") {
+//     arr2.push(arr[i]);
+//     if (arr[i] == "l") {
+//       arr2.push("l");
+//     }
+//   }
+// }
+// console.log(arr2);
