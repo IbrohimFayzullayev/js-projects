@@ -580,3 +580,29 @@ console.log(dayOfProgrammer(year));
 //   }
 // }
 // console.log(arr2);
+
+// let number = 4.25;
+// console.log(Math.ceil(number));
+
+function consecutiveOnes(nums) {
+  //code me
+  let count;
+  let ctn = 0;
+  for (let i = 0; i < nums.length; i++) {
+    count = 0;
+    if (nums[i] === 1) {
+      for (let j = i; j < nums.length; j++) {
+        if (nums[j] == 1) {
+          count++;
+        } else {
+          break;
+        }
+      }
+    }
+    if (ctn < count) {
+      ctn = count;
+    }
+  }
+  console.log(ctn);
+}
+consecutiveOnes([1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1]);
