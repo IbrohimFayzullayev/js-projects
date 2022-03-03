@@ -53,3 +53,14 @@
 //     let ss=this.boyi+this.eni;
 //   }
 // }
+function validatePIN(pin) {
+  let num = Number(pin);
+  console.log(typeof num);
+  console.log(num);
+  if (num === NaN) {
+    return false;
+  } else {
+    return true;
+  }
+}
+console.log(validatePIN("saa1222"));
