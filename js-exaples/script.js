@@ -101,27 +101,43 @@
 // let num2 = Number(num1.join(""));
 // console.log(num2);
 // console.log(9 % 3);
-let n = 20;
-let s = 23;
-let k = 6;
-function beautifulDays(i, j, k) {
+// let n = 20;
+// let s = 23;
+// let k = 6;
+// function beautifulDays(i, j, k) {
+//   // Write your code here
+//   let str1;
+//   let count = 0;
+//   for (let l = i; l <= j; l++) {
+//     str1 = String(l);
+//     let nn = [];
+//     for (let t = 0; t < str1.length; t++) {
+//       nn.unshift(str1[t]);
+//     }
+//     let n3 = Number(nn.join(""));
+//     let div = Math.abs(l - n3) % k;
+//     if (div == 0) {
+//       count++;
+//     } else {
+//       continue;
+//     }
+//   }
+//   return count;
+// }
+// console.log(beautifulDays(n, s, k));
+// console.log(Math.trunc(5 / 2) + 3);
+let n = 5;
+function viralAdvertising(n) {
   // Write your code here
-  let str1;
-  let count = 0;
-  for (let l = i; l <= j; l++) {
-    str1 = String(l);
-    let nn = [];
-    for (let t = 0; t < str1.length; t++) {
-      nn.unshift(str1[t]);
-    }
-    let n3 = Number(nn.join(""));
-    let div = Math.abs(l - n3) % k;
-    if (div == 0) {
-      count++;
-    } else {
-      continue;
-    }
+  let recipes = 5;
+  let sum = 0;
+  let summa = 0;
+  for (let i = 0; i < n; i++) {
+    sum = Math.trunc(recipes / 2);
+    recipes = sum * 3;
+    console.log(sum);
+    summa += sum;
   }
-  return count;
+  return summa;
 }
-console.log(beautifulDays(n, s, k));
+console.log(viralAdvertising(n));
