@@ -126,18 +126,57 @@
 // }
 // console.log(beautifulDays(n, s, k));
 // console.log(Math.trunc(5 / 2) + 3);
-let n = 5;
-function viralAdvertising(n) {
+// let n = 5;
+// function viralAdvertising(n) {
+//   // Write your code here
+//   let recipes = 5;
+//   let sum = 0;
+//   let summa = 0;
+//   for (let i = 0; i < n; i++) {
+//     sum = Math.trunc(recipes / 2);
+//     recipes = sum * 3;
+//     console.log(sum);
+//     summa += sum;
+//   }
+//   return summa;
+// }
+// console.log(viralAdvertising(n));
+let n = 4;
+let m = 11;
+let s = 2;
+function saveThePrisoner(n, m, s) {
   // Write your code here
-  let recipes = 5;
-  let sum = 0;
-  let summa = 0;
-  for (let i = 0; i < n; i++) {
-    sum = Math.trunc(recipes / 2);
-    recipes = sum * 3;
-    console.log(sum);
-    summa += sum;
+  // let count = 0;
+  let num = (m + s - 1) % n;
+  if (num == 0) {
+    return num + n;
+  } else {
+    return num;
   }
-  return summa;
+  // if (num == 0) {
+  //   return num + n;
+  // } else if (num == n - 1) {
+  //   return num + 2;
+  // } else {
+  //   return num + 1;
+  // }
+  // while (count < m) {
+  //   for (let i = s; i < n + 1; i++) {
+  //     count++;
+  //     console.log(i);
+  //     if (count == m) {
+  //       break;
+  //     }
+  //   }
+  //   for (let i = 1; i < n + 1; i++) {
+  //     count++;
+  //     console.log(i);
+  //     if (count == m) {
+  //       break;
+  //     }
+  //   }
+  // }
+
+  // return count;
 }
-console.log(viralAdvertising(n));
+console.log(saveThePrisoner(n, m, s));
