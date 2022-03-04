@@ -64,7 +64,7 @@
 //   }
 // }
 // console.log(validatePIN("saa1222"));
-let arr = [1, 2, 3];
+// let arr = [1, 2, 3];
 // let query = [1, 2];
 // let n = 4;
 // function circularArrayRotation(a, k, queries) {
@@ -92,3 +92,36 @@ let arr = [1, 2, 3];
 //   console.log(arrNew);
 //   count++;
 // }
+// let num = 265;
+// let num1 = [];
+// // let str = String(num);
+// for (let i = 0; i < str.length; i++) {
+//   num1.unshift(str[i]);
+// }
+// let num2 = Number(num1.join(""));
+// console.log(num2);
+// console.log(9 % 3);
+let n = 20;
+let s = 23;
+let k = 6;
+function beautifulDays(i, j, k) {
+  // Write your code here
+  let str1;
+  let count = 0;
+  for (let l = i; l <= j; l++) {
+    str1 = String(l);
+    let nn = [];
+    for (let t = 0; t < str1.length; t++) {
+      nn.unshift(str1[t]);
+    }
+    let n3 = Number(nn.join(""));
+    let div = Math.abs(l - n3) % k;
+    if (div == 0) {
+      count++;
+    } else {
+      continue;
+    }
+  }
+  return count;
+}
+console.log(beautifulDays(n, s, k));
