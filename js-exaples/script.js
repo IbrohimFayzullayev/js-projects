@@ -141,42 +141,42 @@
 //   return summa;
 // }
 // console.log(viralAdvertising(n));
-let n = 4;
-let m = 11;
-let s = 2;
-function saveThePrisoner(n, m, s) {
-  // Write your code here
-  // let count = 0;
-  let num = (m + s - 1) % n;
-  if (num == 0) {
-    return num + n;
-  } else {
-    return num;
-  }
-  // if (num == 0) {
-  //   return num + n;
-  // } else if (num == n - 1) {
-  //   return num + 2;
-  // } else {
-  //   return num + 1;
-  // }
-  // while (count < m) {
-  //   for (let i = s; i < n + 1; i++) {
-  //     count++;
-  //     console.log(i);
-  //     if (count == m) {
-  //       break;
-  //     }
-  //   }
-  //   for (let i = 1; i < n + 1; i++) {
-  //     count++;
-  //     console.log(i);
-  //     if (count == m) {
-  //       break;
-  //     }
-  //   }
-  // }
+// let n = 4;
+// let m = 11;
+// let s = 2;
+// function saveThePrisoner(n, m, s) {
+// Write your code here
+// let count = 0;
+// let num = (m + s - 1) % n;
+// if (num == 0) {
+//   return num + n;
+// } else {
+//   return num;
+// }
+// if (num == 0) {
+//   return num + n;
+// } else if (num == n - 1) {
+//   return num + 2;
+// } else {
+//   return num + 1;
+// }
+// while (count < m) {
+//   for (let i = s; i < n + 1; i++) {
+//     count++;
+//     console.log(i);
+//     if (count == m) {
+//       break;
+//     }
+//   }
+//   for (let i = 1; i < n + 1; i++) {
+//     count++;
+//     console.log(i);
+//     if (count == m) {
+//       break;
+//     }
+//   }
+// }
 
-  // return count;
-}
-console.log(saveThePrisoner(n, m, s));
+// return count;
+// }
+// console.log(saveThePrisoner(n, m, s));
