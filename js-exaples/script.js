@@ -64,29 +64,31 @@
 //   }
 // }
 // console.log(validatePIN("saa1222"));
-let arr = [2, 3, 1];
-let query = [1, 2];
-let n = 2;
-function circularArrayRotation(a, k, queries) {
-  let count = 0;
-  let arrNew = [...a];
-  while (count < k) {
-    for (let i = 0; i < arrNew.length - 1; i++) {
-      arrNew[0] = a[a.length - 1];
-      arrNew[i + 1] = a[i];
-    }
-    console.log(arrNew);
-    count++;
-  }
-}
-circularArrayRotation(arr, n, query);
-// function arrayRotate(arr, reverse, k) {
-//   let count = 0;
-//   while (count < k) {
-//     if (reverse) arr.unshift(arr.pop());
-//     else arr.push(arr.shift());
-//     return arr;
-//     count++;
+let arr = [1, 2, 3];
+// let query = [1, 2];
+// let n = 4;
+// function circularArrayRotation(a, k, queries) {
+//   let ctn = 0;
+//   let arrr = [...a];
+//   while (ctn < k) {
+//     for (let i = 0; i < arrr.length; i++) {
+//       arrr[0] = arrr[arrr.length - 1];
+//       arrr[i] = arrr[i + 1];
+//     }
+//     console.log(arrr);
+//     ctn++;
 //   }
 // }
-// console.log(arrayRotate(arr, 2, n));
+// circularArrayRotation(arr, n, 2);
+
+// let count = 0;
+// let arv = a;
+// let arrNew = [...arv];
+// while (count < k) {
+//   for (let i = 0; i < arrNew.length - 1; i++) {
+//     arrNew[0] = a[a.length - 1];
+//     arrNew[i + 1] = a[i];
+//   }
+//   console.log(arrNew);
+//   count++;
+// }
