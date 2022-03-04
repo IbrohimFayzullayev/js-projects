@@ -53,14 +53,40 @@
 //     let ss=this.boyi+this.eni;
 //   }
 // }
-function validatePIN(pin) {
-  let num = Number(pin);
-  console.log(typeof num);
-  console.log(num);
-  if (num === NaN) {
-    return false;
-  } else {
-    return true;
+// function validatePIN(pin) {
+//   let num = Number(pin);
+//   console.log(typeof num);
+//   console.log(num);
+//   if (num === NaN) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+// console.log(validatePIN("saa1222"));
+let arr = [2, 3, 1];
+let query = [1, 2];
+let n = 2;
+function circularArrayRotation(a, k, queries) {
+  let count = 0;
+  let arrNew = [...a];
+  while (count < k) {
+    for (let i = 0; i < arrNew.length - 1; i++) {
+      arrNew[0] = a[a.length - 1];
+      arrNew[i + 1] = a[i];
+    }
+    console.log(arrNew);
+    count++;
   }
 }
-console.log(validatePIN("saa1222"));
+circularArrayRotation(arr, n, query);
+// function arrayRotate(arr, reverse, k) {
+//   let count = 0;
+//   while (count < k) {
+//     if (reverse) arr.unshift(arr.pop());
+//     else arr.push(arr.shift());
+//     return arr;
+//     count++;
+//   }
+// }
+// console.log(arrayRotate(arr, 2, n));
