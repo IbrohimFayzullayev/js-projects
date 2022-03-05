@@ -259,17 +259,79 @@ let k = 5;
 
 // yech(k, s);
 
-let n = 44654;
-let count;
-for (let i = 0; i < n; i++) {
-  count = 0;
-  for (let j = 1; j <= i; j++) {
-    if (i % j == 0) {
+// let n = 44654;
+// let count;
+// for (let i = 0; i < n; i++) {
+//   count = 0;
+//   for (let j = 1; j <= i; j++) {
+//     if (i % j == 0) {
+//       count++;
+//     }
+//   }
+//   if (count == 2) {
+//     console.log(i);
+//   }
+// }
+// console.log(count);
+
+// let n = 12;
+// let n1 = String(n);
+// let sum = 0;
+// for (let i = 0; i < n1.length; i++) {
+//   sum += Number(n1[i]);
+// }
+// console.log(sum);
+// if (n % sum == 0) {
+//   console.log("YES");
+// } else {
+//   console.log("NO");
+// }
+// let s1 = 101;
+// function check(s) {
+//   //write your code here
+//   let n1 = String(s);
+//   let sum = 0;
+//   for (let i = 0; i < n1.length; i++) {
+//     sum += Number(n1[i]);
+//   }
+//   if (s % sum == 0) {
+//     console.log("YES");
+//   } else {
+//     console.log("NO");
+//   }
+// }
+
+// check(s1);
+
+// let n = -27;
+// let count = 0;
+// for (let i = 1; i <= n; i++) {
+//   if (n % i == 0) {
+//     count++;
+//   } else {
+//     continue;
+//   }
+// }
+// if (count == 2) {
+//   console.log(1);
+// } else {
+//   console.log(0);
+// }
+let input = 23;
+function IsPrime(input) {
+  // Write Code Here
+  let count = 0;
+  for (let i = 1; i <= input; i++) {
+    if (input % i == 0) {
       count++;
+    } else {
+      continue;
     }
   }
   if (count == 2) {
-    console.log(i);
+    return 1;
+  } else {
+    return 0;
   }
 }
-// console.log(count);
+console.log(IsPrime(input));
