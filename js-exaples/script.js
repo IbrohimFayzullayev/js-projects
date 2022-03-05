@@ -180,3 +180,26 @@
 // return count;
 // }
 // console.log(saveThePrisoner(n, m, s));
+
+// 05.03.2022
+let bill = [3, 10, 2, 9];
+let k = 1;
+let b = 8;
+function bonAppetit(bill, k, b) {
+  // Write your code here
+  let sum = 0;
+  for (let i = 0; i < bill.length; i++) {
+    if (bill.indexOf(bill[i]) == k) {
+      continue;
+    } else {
+      sum += bill[i];
+    }
+  }
+  if (b == Math.trunc(sum / 2)) {
+    console.log("Bon Appetit");
+  } else {
+    let qiymat = Math.trunc(b - sum / 2);
+    console.log(qiymat);
+  }
+}
+bonAppetit(bill, k, b);
