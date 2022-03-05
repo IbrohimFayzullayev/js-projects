@@ -182,24 +182,45 @@
 // console.log(saveThePrisoner(n, m, s));
 
 // 05.03.2022
-let bill = [3, 10, 2, 9];
-let k = 1;
-let b = 8;
-function bonAppetit(bill, k, b) {
-  // Write your code here
-  let sum = 0;
-  for (let i = 0; i < bill.length; i++) {
-    if (bill.indexOf(bill[i]) == k) {
-      continue;
-    } else {
-      sum += bill[i];
-    }
-  }
-  if (b == Math.trunc(sum / 2)) {
-    console.log("Bon Appetit");
-  } else {
-    let qiymat = Math.trunc(b - sum / 2);
-    console.log(qiymat);
-  }
-}
-bonAppetit(bill, k, b);
+// let bill = [3, 10, 2, 9];
+// let k = 1;
+// let b = 8;
+// function bonAppetit(bill, k, b) {
+//   // Write your code here
+//   let sum = 0;
+//   for (let i = 0; i < bill.length; i++) {
+//     if (bill.indexOf(bill[i]) == k) {
+//       continue;
+//     } else {
+//       sum += bill[i];
+//     }
+//   }
+//   if (b == Math.trunc(sum / 2)) {
+//     console.log("Bon Appetit");
+//   } else {
+//     let qiymat = Math.trunc(b - sum / 2);
+//     console.log(qiymat);
+//   }
+// }
+// bonAppetit(bill, k, b);
+
+// let c = [0, 1, 0, 0, 0, 1, 0];
+// function jumpingOnClouds(c) {
+//   // Write your code here
+//   let count = 0;
+//   for (let i = 0; i < c.length; ) {
+//     if (c[i] == 0) {
+//       if (c[i + 2] == 0) {
+//         i += 2;
+//         count++;
+//       } else {
+//         i++;
+//         count++;
+//       }
+//     } else {
+//       continue;
+//     }
+//   }
+//   console.log(count);
+// }
+// jumpingOnClouds(c);
