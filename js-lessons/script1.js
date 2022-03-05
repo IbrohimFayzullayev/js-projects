@@ -317,21 +317,31 @@ let k = 5;
 // } else {
 //   console.log(0);
 // }
-let input = 23;
-function IsPrime(input) {
-  // Write Code Here
-  let count = 0;
-  for (let i = 1; i <= input; i++) {
-    if (input % i == 0) {
-      count++;
-    } else {
-      continue;
-    }
-  }
-  if (count == 2) {
-    return 1;
-  } else {
-    return 0;
-  }
+// let input = 23;
+// function IsPrime(input) {
+//   // Write Code Here
+//   let count = 0;
+//   for (let i = 1; i <= input; i++) {
+//     if (input % i == 0) {
+//       count++;
+//     } else {
+//       continue;
+//     }
+//   }
+//   if (count == 2) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// }
+// console.log(IsPrime(input));
+
+let arr = [1, 2, 3];
+let count = 0;
+let ar = [];
+for (let i = 0; i < arr.length; i++) {
+  ar.unshift(arr[i]);
+  count++;
 }
-console.log(IsPrime(input));
+console.log(ar);
+console.log(count);
