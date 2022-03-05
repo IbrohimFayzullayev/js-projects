@@ -199,15 +199,15 @@ market.buyurtma(...arr);
 // }
 // console.log(sum);
 
-const obj = {
-  name: "Ibrohim",
-  age: 20,
-  job: "Developer",
-  city: "Tashkent",
-  status: "student",
-};
-const kalitlar = Object.keys(obj);
-const qiymatlar = Object.values(obj);
+// const obj = {
+//   name: "Ibrohim",
+//   age: 20,
+//   job: "Developer",
+//   city: "Tashkent",
+//   status: "student",
+// };
+// const kalitlar = Object.keys(obj);
+// const qiymatlar = Object.values(obj);
 // console.log(kalitlar);
 // console.log(qiymatlar);
 // for (let kalit of kalitlar.entries()) {
@@ -216,6 +216,60 @@ const qiymatlar = Object.values(obj);
 // for (let qiymat of qiymatlar) {
 //   console.log(qiymat);
 // }
-for (let item of Object.entries(obj)) {
-  console.log(`${item[0]}  : ${item[1]}`);
+// for (let item of Object.entries(obj)) {
+//   console.log(`${item[0]}  : ${item[1]}`);
+// }
+
+// *** 05.03.2022
+// let str = "happy,newyear,enjoy";
+// let str1 = str.split(",");
+// console.log(str1.join(" "));
+
+// function Checker(str) {
+//   // Write Your Code Here!
+
+//   return;
+// }
+
+let s = 15;
+let k = 5;
+// let count = 0;
+// for (let x = 0; x <= k; x++) {
+//   for (let y = 0; y <= k; y++) {
+//     for (let z = 0; z <= k; z++) {
+//       if (x + y + z == s) {
+//         count++;
+//       }
+//     }
+//   }
+// }
+// console.log(count);
+// function yech(k, s) {
+//   let count = 0;
+//   for (let x = 0; x <= k; x++) {
+//     for (let y = 0; y <= k; y++) {
+//       let z = s - (x + y);
+//       if (0 <= z && z <= k) {
+//         count++;
+//       }
+//     }
+//   }
+//   console.log(count);
+// }
+
+// yech(k, s);
+
+let n = 44654;
+let count;
+for (let i = 0; i < n; i++) {
+  count = 0;
+  for (let j = 1; j <= i; j++) {
+    if (i % j == 0) {
+      count++;
+    }
+  }
+  if (count == 2) {
+    console.log(i);
+  }
 }
+// console.log(count);
