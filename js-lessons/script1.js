@@ -386,3 +386,57 @@ let k = 5;
 //   // has bu elementni me ni ichidan izlaydi agar bolsa true yoq bolsa false chiqaradi
 //   console.log(me.get("name"));
 // }
+
+let week = ["dushanba", "seshanba", "chorshanba", "payshanba", "juma"];
+let weekend = ["shanba", "yakshanba"];
+
+const office = new Map([
+  [true, "Hozir bizda ish kuni"],
+  [false, "Bugun dam olish kuni"],
+  ["week", week],
+  ["weekend", weekend],
+  ["error", "bunday kun yoq"],
+  ["open", 9],
+  ["close", 18],
+  ["xato", "Biz bu vaqtlarda ishlamaymiz"],
+]);
+// let day = prompt("Kunni kirit").toLowerCase();
+// let time = Number(prompt("Vaqtni kirit"));
+// if (
+//   office.get("week").includes(day) &&
+//   time > office.get("open") &&
+//   time < office.get("close")
+// ) {
+//   console.log(office.get(true));
+// } else if (
+//   (office.get("week").includes(day) && time < office.get("open")) ||
+//   (time > office.get("close") && office.get("week").includes(day))
+// ) {
+//   console.log(office.get("xato"));
+// } else if (office.get("weekend").includes(day)) {
+//   console.log(office.get(false));
+// } else {
+//   console.log(office.get("error"));
+// }
+
+const savol = new Map([
+  ["Savol", "O'zbekiston poytaxti:"],
+  [1, "Toshkent"],
+  [2, "Samarqand"],
+  [3, "Xorazm"],
+  ["javob", 1],
+  [true, "To'g'ri javob"],
+  [false, "Xato javob"],
+]);
+console.log([...savol.keys()]);
+console.log([...savol.values()]);
+// console.log(savol.get("Savol"));
+// for (let [key, val] of savol) {
+//   if (typeof key == "number") {
+//     console.log(`${key} - ${val}`);
+//   }
+// }
+// let sav = Number(prompt("Javobni kiriting"));
+// sav == savol.get("javob")
+//   ? console.log(savol.get(true))
+//   : console.log(savol.get(false));
