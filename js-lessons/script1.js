@@ -345,18 +345,44 @@ let k = 5;
 // }
 // console.log(ar);
 // console.log(count);
-let arr = [
-  "Frontend",
-  "Frontend",
-  "Frontend",
-  "Frontend",
-  "Backend",
-  "Backend",
-  "Backend",
-  "Mobile",
-  "Mobile",
-  "Mobile",
-  "Mobile",
-];
-let ret = new Set(arr);
-console.log(ret);
+// let arr = [
+//   "Frontend",
+//   "Frontend",
+//   "Frontend",
+//   "Frontend",
+//   "Backend",
+//   "Backend",
+//   "Backend",
+//   "Mobile",
+//   "Mobile",
+//   "Mobile",
+//   "Mobile",
+// ];
+// let ret = new Set(arr);
+// // console.log(ret);
+// const me = new Map();
+// me.set("name", "John Deo");
+// me.set(1, 20);
+// me.set(true, "yutdik");
+// console.log(me);
+// console.log(`${me.get(true)} - ${me.get("name")} - ${me.get(1)}`);
+// const rest = new Map([
+//   [1, 20],
+//   [2, 30],
+//   ["name", "John"],
+//   [3, 30],
+// ]);
+
+// let ar1 = [1, 2];
+// me.set(ar1, "Array qoshdi");
+// console.log(me);
+// rest.clear(); --> polniy ochirib tashlaydi
+// rest.delete("name"); --> Belginlangan key ni valuesi bn ochirib tashlaydi
+// for (let item of rest) {
+//   console.log(item);
+// }
+// bu rest arraydagi barcha elementni chiqaradi
+// if (me.has("name")) {
+//   // has bu elementni me ni ichidan izlaydi agar bolsa true yoq bolsa false chiqaradi
+//   console.log(me.get("name"));
+// }
