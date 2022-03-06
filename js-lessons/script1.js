@@ -336,12 +336,27 @@ let k = 5;
 // }
 // console.log(IsPrime(input));
 
-let arr = [1, 2, 3];
-let count = 0;
-let ar = [];
-for (let i = 0; i < arr.length; i++) {
-  ar.unshift(arr[i]);
-  count++;
-}
-console.log(ar);
-console.log(count);
+// let arr = [1, 2, 3];
+// let count = 0;
+// let ar = [];
+// for (let i = 0; i < arr.length; i++) {
+//   ar.unshift(arr[i]);
+//   count++;
+// }
+// console.log(ar);
+// console.log(count);
+let arr = [
+  "Frontend",
+  "Frontend",
+  "Frontend",
+  "Frontend",
+  "Backend",
+  "Backend",
+  "Backend",
+  "Mobile",
+  "Mobile",
+  "Mobile",
+  "Mobile",
+];
+let ret = new Set(arr);
+console.log(ret);
