@@ -224,3 +224,46 @@
 //   console.log(count);
 // }
 // jumpingOnClouds(c);
+// function battle(x, y) {
+//   // Lets the battle begin!
+//   let alphabet = "abcdefghijklmnopqrstuvwxyz";
+//   let alphabet1 = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+//   let str = x;
+//   let small = alphabet.split("");
+//   let big = alphabet1.split("");
+//   let sum = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = 0; j < small.length; j++) {
+//       if (str[i] == small[j]) {
+//         sum = sum + (j + 1) / 2;
+//       }
+//     }
+//     for (let j = 0; j < big.length; j++) {
+//       if (str[i] == big[j]) {
+//         sum = sum + j + 1;
+//       }
+//     }
+//   }
+//   let st = y;
+//   let sum1 = 0;
+//   for (let i = 0; i < st.length; i++) {
+//     for (let j = 0; j < small.length; j++) {
+//       if (st[i] == small[j]) {
+//         sum1 = sum1 + (j + 1) / 2;
+//       }
+//     }
+//     for (let j = 0; j < big.length; j++) {
+//       if (st[i] == big[j]) {
+//         sum1 = sum1 + j + 1;
+//       }
+//     }
+//   }
+//   if (sum1 > sum) {
+//     console.log(y);
+//   } else if (sum > sum1) {
+//     console.log(x);
+//   } else {
+//     console.log("Tie");
+//   }
+// }
+// battle("ONE", "NEO");
