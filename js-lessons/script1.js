@@ -512,12 +512,12 @@ let k = 5;
 // };
 // object.order();
 
-let text = "salom ozbekiston hello world";
-let txt = text.split(" ");
-for (let i = 0; i < txt.length; i++) {
-  txt[i] = txt[i][0].toUpperCase() + txt[i].substring(1);
-}
-console.log(txt.join(" "));
+// let text = "salom ozbekiston hello world";
+// let txt = text.split(" ");
+// for (let i = 0; i < txt.length; i++) {
+//   txt[i] = txt[i][0].toUpperCase() + txt[i].substring(1);
+// }
+// console.log(txt.join(" "));
 
 // let tv = [];
 // for (let i = 1; i < text.length; i++) {
@@ -530,3 +530,47 @@ console.log(txt.join(" "));
 // }
 // tv.unshift(text[0].toUpperCase());
 // console.log(tv.join(""));
+
+// let str = "11111\n";
+// let str1 = str.padStart(10, "*");
+// let str2 = str1.padEnd(15, "$");
+// console.log(str.repeat(10));
+
+// let nameStr = "9998 1991 1828 1667";
+// let strw = nameStr.slice(-4);
+// console.log(strw.padStart(16, "*"));
+
+// let arr = [
+//   { name: "Malibu-2", price: 36000, year: 2022 },
+//   { name: "Cobalt-4", price: 18000, year: 2020 },
+//   { name: "Captiva-4", price: 40000, year: 2021 },
+//   { name: "Spark-4", price: 15000, year: 2019 },
+// ];
+// let cars = function (name = "Mashina", price = 40000) {
+//   switch (name) {
+//     case "Mashina":
+//       arr;
+//       for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].price <= price) {
+//           console.log(
+//             `Siz ${arr[i].price}$ ga ${arr[i].year}yilgi ${arr[i].name} ni olishingiz mumkin`
+//           );
+//         }
+//       }
+//   }
+// };
+// cars(undefined, 20000);
+
+let me = {
+  id: 45641,
+  name: "Umid",
+};
+let nomer = prompt("Karta nomerni kiriting");
+let library = function (obj, nomer) {
+  if (nomer == obj.id) {
+    console.log(`Xush kelibsiz ${obj.name}`);
+  } else {
+    console.log(`${nomer} - Bunday karta mavjud emas`);
+  }
+};
+library(me, nomer);
