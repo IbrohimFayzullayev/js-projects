@@ -441,31 +441,95 @@ let k = 5;
 //   ? console.log(savol.get(true))
 //   : console.log(savol.get(false));
 
-var object = {
-  key1: 10,
-  key2: 3,
-  key3: 40,
-  key4: 20,
-};
-var array = [];
-for (var people in object) {
-  array.push([people, object[people]]);
-}
-console.log(...array);
+// var object = {
+//   key1: 10,
+//   key2: 3,
+//   key3: 40,
+//   key4: 20,
+// };
+// var array = [];
+// for (var people in object) {
+//   array.push([people, object[people]]);
+// }
+// console.log(...array);
 
-let str = {
-  num1: 10,
-  num2: 20,
-  num3: 30,
-  num4: 40,
-  num5: 50,
-};
-let arr = [];
-for (let num in str) {
-  arr.push([num, str[num]]);
-  // console.log(num);
-  // console.log(str[num]);
-}
-console.log(...arr);
-console.log(Array.isArray(8, [4]));
-console.log({} instanceof Array);
+// let str = {
+//   num1: 10,
+//   num2: 20,
+//   num3: 30,
+//   num4: 40,
+//   num5: 50,
+// };
+// let arr = [];
+// for (let num in str) {
+//   arr.push([num, str[num]]);
+//   // console.log(num);
+//   // console.log(str[num]);
+// }
+// console.log(...arr);
+// console.log(Array.isArray(8, [4]));
+// console.log({} instanceof Array);
+
+// const l1 = [1, 2, 3],
+//   l2 = [4, 5, 6],
+//   f1 = [],
+//   f2 = [];
+// if (l1.length > l2.length) {
+//   let x = l1.length - l2.length;
+//   for (let i = 0; i < x; i++) {
+//     l2.push(0);
+//   }
+// } else if (l1.length < l2.length) {
+//   let x = l2.length - l1.length;
+//   for (let i = 0; i < x; i++) {
+//     l1.push(0);
+//   }
+// }
+
+// for (let i = l1.length - 1, j = l1.length - 1; i >= 0, j >= 0; i--, j--) {
+//   f1.push(l1[i]);
+//   f2.push(l2[j]);
+// }
+// let sumre = String(Number(f1.join("")) + Number(f2.join("")));
+// let arr = [];
+// for (let i = sumre.length - 1; i >= 0; i--) {
+//   arr.push(Number(sumre[i]));
+// }
+// console.log(arr);
+// let l1 = [9, 9, 9, 9, 9, 9, 9];
+// let l2 = [9, 9, 9, 9];
+// function check(l1, l2) {
+//   //write your code here
+//   let f1 = [];
+//   let f2 = [];
+// if (l1.length > l2.length) {
+//   let x = l1.length - l2.length;
+//   for (let i = 0; i < x; i++) {
+//     l2.push(0);
+//   }
+// } else if (l1.length < l2.length) {
+//   let x = l2.length - l1.length;
+//   for (let i = 0; i < x; i++) {
+//     l1.push(0);
+//   }
+// }
+//   for (let i = l1.length - 1, j = l1.length - 1; i >= 0, j >= 0; i--, j--) {
+//     f1.push(l1[i]);
+//     f2.push(l2[j]);
+//   }
+//   let sumre = String(Number(f1.join("")) + Number(f2.join("")));
+//   let arr = [];
+//   for (let i = sumre.length - 1; i >= 0; i--) {
+//     arr.push(Number(sumre[i]));
+//   }
+//   console.log(arr);
+// }
+
+// check(l1, l2);
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let alphabet1 = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+
+let small = alphabet.split("");
+let big = alphabet1.split("");
+console.log(small);
+console.log(big);
