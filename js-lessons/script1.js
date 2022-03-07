@@ -496,40 +496,45 @@ let k = 5;
 //   arr.push(Number(sumre[i]));
 // }
 // console.log(arr);
-// let l1 = [9, 9, 9, 9, 9, 9, 9];
-// let l2 = [9, 9, 9, 9];
-// function check(l1, l2) {
-//   //write your code here
-//   let f1 = [];
-//   let f2 = [];
-// if (l1.length > l2.length) {
-//   let x = l1.length - l2.length;
-//   for (let i = 0; i < x; i++) {
-//     l2.push(0);
-//   }
-// } else if (l1.length < l2.length) {
-//   let x = l2.length - l1.length;
-//   for (let i = 0; i < x; i++) {
-//     l1.push(0);
+let l1 = [2, 5, 7];
+let l2 = [4, 8, 9, 7];
+function check(l1, l2) {
+  //write your code here
+  let f1 = [];
+  let f2 = [];
+  if (l1.length > l2.length) {
+    let x = l1.length - l2.length;
+    for (let i = 0; i < x; i++) {
+      l2.push(0);
+    }
+  } else if (l1.length < l2.length) {
+    let x = l2.length - l1.length;
+    for (let i = 0; i < x; i++) {
+      l1.push(0);
+    }
+  }
+  for (let i = l1.length - 1, j = l1.length - 1; i >= 0, j >= 0; i--, j--) {
+    f1.push(l1[i]);
+    f2.push(l2[j]);
+  }
+  let sumre = String(Number(f1.join("")) + Number(f2.join("")));
+  let arr = [];
+  for (let i = sumre.length - 1; i >= 0; i--) {
+    arr.push(Number(sumre[i]));
+  }
+  let strA = arr.join(",");
+  console.log(`[${strA}]`);
+}
+check(l1, l2);
+// let alphabet = "abcdefghijklmnopqrstuvwxyz";
+// let alphabet1 = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+// let str = "Salom";
+// let small = alphabet.split("");
+// let big = alphabet1.split("");
+// let sum = 0;
+// for (let i = 0; i < str.length; i++) {
+//   for (let j = 0; j < small.length; j++) {
+//     if (str[i] == small[j]) {
+//     }
 //   }
 // }
-//   for (let i = l1.length - 1, j = l1.length - 1; i >= 0, j >= 0; i--, j--) {
-//     f1.push(l1[i]);
-//     f2.push(l2[j]);
-//   }
-//   let sumre = String(Number(f1.join("")) + Number(f2.join("")));
-//   let arr = [];
-//   for (let i = sumre.length - 1; i >= 0; i--) {
-//     arr.push(Number(sumre[i]));
-//   }
-//   console.log(arr);
-// }
-
-// check(l1, l2);
-let alphabet = "abcdefghijklmnopqrstuvwxyz";
-let alphabet1 = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
-
-let small = alphabet.split("");
-let big = alphabet1.split("");
-console.log(small);
-console.log(big);
