@@ -267,3 +267,17 @@
 //   }
 // }
 // battle("ONE", "NEO");
+let str = "The_Stealth_Warrior";
+function toCamelCase(str) {
+  let st = [];
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == "_" || str[i] == "-") {
+      st.push(str[i + 1].toUpperCase());
+      i++;
+    } else {
+      st.push(str[i]);
+    }
+  }
+  console.log(st.join(""));
+}
+toCamelCase(str);

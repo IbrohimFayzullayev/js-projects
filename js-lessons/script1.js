@@ -496,3 +496,37 @@ let k = 5;
 //   arr.push(Number(sumre[i]));
 // }
 // console.log(arr);
+// function toCamelCase(str) {
+//   for (let i = 0; i < str.length; i++) {}
+// }
+// let object = {
+//   age: 90,
+//   order() {
+//     console.log(this.age);
+//     let tht = this;
+//     function names() {
+//       console.log(tht.age);
+//     }
+//     names();
+//   },
+// };
+// object.order();
+
+let text = "salom ozbekiston hello world";
+let txt = text.split(" ");
+for (let i = 0; i < txt.length; i++) {
+  txt[i] = txt[i][0].toUpperCase() + txt[i].substring(1);
+}
+console.log(txt.join(" "));
+
+// let tv = [];
+// for (let i = 1; i < text.length; i++) {
+//   if (text[i] == " ") {
+//     tv.push(" " + text[i + 1].toUpperCase());
+//     i++;
+//   } else {
+//     tv.push(text[i]);
+//   }
+// }
+// tv.unshift(text[0].toUpperCase());
+// console.log(tv.join(""));
