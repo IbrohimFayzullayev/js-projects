@@ -387,19 +387,19 @@ let k = 5;
 //   console.log(me.get("name"));
 // }
 
-let week = ["dushanba", "seshanba", "chorshanba", "payshanba", "juma"];
-let weekend = ["shanba", "yakshanba"];
+// let week = ["dushanba", "seshanba", "chorshanba", "payshanba", "juma"];
+// let weekend = ["shanba", "yakshanba"];
 
-const office = new Map([
-  [true, "Hozir bizda ish kuni"],
-  [false, "Bugun dam olish kuni"],
-  ["week", week],
-  ["weekend", weekend],
-  ["error", "bunday kun yoq"],
-  ["open", 9],
-  ["close", 18],
-  ["xato", "Biz bu vaqtlarda ishlamaymiz"],
-]);
+// const office = new Map([
+//   [true, "Hozir bizda ish kuni"],
+//   [false, "Bugun dam olish kuni"],
+//   ["week", week],
+//   ["weekend", weekend],
+//   ["error", "bunday kun yoq"],
+//   ["open", 9],
+//   ["close", 18],
+//   ["xato", "Biz bu vaqtlarda ishlamaymiz"],
+// ]);
 // let day = prompt("Kunni kirit").toLowerCase();
 // let time = Number(prompt("Vaqtni kirit"));
 // if (
@@ -419,17 +419,17 @@ const office = new Map([
 //   console.log(office.get("error"));
 // }
 
-const savol = new Map([
-  ["Savol", "O'zbekiston poytaxti:"],
-  [1, "Toshkent"],
-  [2, "Samarqand"],
-  [3, "Xorazm"],
-  ["javob", 1],
-  [true, "To'g'ri javob"],
-  [false, "Xato javob"],
-]);
-console.log([...savol.keys()]);
-console.log([...savol.values()]);
+// const savol = new Map([
+//   ["Savol", "O'zbekiston poytaxti:"],
+//   [1, "Toshkent"],
+//   [2, "Samarqand"],
+//   [3, "Xorazm"],
+//   ["javob", 1],
+//   [true, "To'g'ri javob"],
+//   [false, "Xato javob"],
+// ]);
+// console.log([...savol.keys()]);
+// console.log([...savol.values()]);
 // console.log(savol.get("Savol"));
 // for (let [key, val] of savol) {
 //   if (typeof key == "number") {
@@ -440,3 +440,32 @@ console.log([...savol.values()]);
 // sav == savol.get("javob")
 //   ? console.log(savol.get(true))
 //   : console.log(savol.get(false));
+
+var object = {
+  key1: 10,
+  key2: 3,
+  key3: 40,
+  key4: 20,
+};
+var array = [];
+for (var people in object) {
+  array.push([people, object[people]]);
+}
+console.log(...array);
+
+let str = {
+  num1: 10,
+  num2: 20,
+  num3: 30,
+  num4: 40,
+  num5: 50,
+};
+let arr = [];
+for (let num in str) {
+  arr.push([num, str[num]]);
+  // console.log(num);
+  // console.log(str[num]);
+}
+console.log(...arr);
+console.log(Array.isArray(8, [4]));
+console.log({} instanceof Array);
