@@ -156,36 +156,71 @@
 
 // ** Pete, the baker 5kyu
 
-function cakes(recipe, available) {
-  // TODO: insert code
-  let count = 100;
-  let ct1 = Object.keys(recipe);
-  let ct2 = Object.keys(available);
-  if (ct1.length <= ct2.length) {
-    for (let el of Object.entries(recipe)) {
-      for (let el1 of Object.entries(available)) {
-        if (el[0] == el1[0]) {
-          let min = Math.trunc(el1[1] / el[1]);
-          if (count > min) {
-            count = min;
-          }
-        }
-      }
+// function cakes(recipe, available) {
+//   // TODO: insert code
+//   let count = 100;
+//   let ct1 = Object.keys(recipe);
+//   let ct2 = Object.keys(available);
+//   if (ct1.length <= ct2.length) {
+//     for (let el of Object.entries(recipe)) {
+//       for (let el1 of Object.entries(available)) {
+//         if (el[0] == el1[0]) {
+//           let min = Math.trunc(el1[1] / el[1]);
+//           if (count > min) {
+//             count = min;
+//           }
+//         }
+//       }
+//     }
+//     return count;
+//   } else {
+//     return 0;
+//   }
+// }
+// console.log(
+//   cakes(
+//     { apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 },
+//     { sugar: 500, flour: 2000, milk: 2000 }
+//   )
+// );
+// console.log(
+//   cakes(
+//     { flour: 500, sugar: 200, eggs: 1 },
+//     { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
+//   )
+// );
+
+// ** Which are in? 6kyu
+// let a1 = ["arp", "live", "strong"];
+// let a2 = ["lively", "alive", "harp", "sharp", "armstrong"];
+
+// ** Casino chips 6kyu
+// me output
+function solve(arr) {
+  let max = arr[0];
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    if (max < arr[i]) {
+      max = arr[i];
     }
-    return count;
+  }
+  if (sum - max < max) {
+    console.log(sum - max);
   } else {
-    return 0;
+    console.log(Math.trunc(sum / 2));
   }
 }
-console.log(
-  cakes(
-    { apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 },
-    { sugar: 500, flour: 2000, milk: 2000 }
-  )
-);
-console.log(
-  cakes(
-    { flour: 500, sugar: 200, eggs: 1 },
-    { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
-  )
-);
+solve([1, 1, 1]); // => 1
+solve([1, 2, 1]); // => 2
+solve([4, 1, 1]); // => 2
+solve([8, 2, 8]); // => 9
+solve([8, 1, 4]); // => 5
+solve([7, 4, 10]); // => 10
+solve([12, 12, 12]); //// => 18
+
+// codewars output
+// function solve(arr) {
+//   var [a, b, c] = arr.sort((x, y) => x - y);
+//   return Math.min(a + b, ~~((a + b + c) / 2));
+// }
