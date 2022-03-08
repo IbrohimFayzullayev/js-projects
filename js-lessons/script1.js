@@ -231,8 +231,8 @@ market.buyurtma(...arr);
 //   return;
 // }
 
-let s = 15;
-let k = 5;
+// let s = 15;
+// let k = 5;
 // let count = 0;
 // for (let x = 0; x <= k; x++) {
 //   for (let y = 0; y <= k; y++) {
@@ -561,16 +561,16 @@ let k = 5;
 // };
 // cars(undefined, 20000);
 
-let me = {
-  id: 45641,
-  name: "Umid",
-};
-let nomer = prompt("Karta nomerni kiriting");
-let library = function (obj, nomer) {
-  if (nomer == obj.id) {
-    console.log(`Xush kelibsiz ${obj.name}`);
-  } else {
-    console.log(`${nomer} - Bunday karta mavjud emas`);
-  }
-};
-library(me, nomer);
+// let me = {
+//   id: 45641,
+//   name: "Umid",
+// };
+// let nomer = prompt("Karta nomerni kiriting");
+// let library = function (obj, nomer) {
+//   if (nomer == obj.id) {
+//     console.log(`Xush kelibsiz ${obj.name}`);
+//   } else {
+//     console.log(`${nomer} - Bunday karta mavjud emas`);
+//   }
+// };
+// library(me, nomer);
