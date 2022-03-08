@@ -97,20 +97,59 @@
 // console.log(createPhoneNumber(art));
 
 // ** The Primes as a Result of the Longest Consecutive Sum I 5kyu
-let num = 100;
-function primeMaxLengthChain(n) {
-  var x;
-  let count = 0;
-  for (let i = 1; i < n; i++) {
-    for (let j = i; j > 0; j--) {
-      if (i % j == 0) {
-        count++;
-      }
-    }
-    if (count == 2) {
-      return i;
-    }
-  }
-  // return x; // or []
-}
-console.log(primeMaxLengthChain(num));
+// let num = 100;
+// function primeMaxLengthChain(n) {
+//   var x;
+//   let sum = 0;
+//   for (let i = 1; i < n; i++) {
+//     let count = 0;
+//     for (let j = i; j > 0; j--) {
+//       if (i % j == 0) {
+//         count++;
+//       }
+//     }
+//     if (count == 2) {
+//       if (sum < n / 2) {
+//         sum += i;
+//         console.log(sum);
+//       }
+//     }
+//   }
+//   console.log(sum);
+// }
+// primeMaxLengthChain(num);
+
+// ** Are they the "same"? 6kyu
+// let a = [121, 144, 19, 161, 19, 144, 19, 11];
+// let b = [132, 14641, 20736, 361, 25921, 361, 20736, 361];
+// function comp(array1, array2) {
+//   //your code here
+//   let arr1 = [...array1];
+//   let arr2 = [...array2];
+//   for (let i = 0; i < arr1.length; i++) {
+//     for (let j = 0; j < arr2.length; j++) {
+//       if (arr1[i] ** 2 == arr2[j]) {
+//         arr2.slice(j,1);
+//         continue;
+//       }
+//     }
+//   }
+// }
+
+// ** Array.diff 6kyu
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1];
+
+// function arrayDiff(a, b) {
+//   let newArr = [];
+//   for (let i = 0; i < a.length; i++) {
+//     if (b.includes(a[i])) {
+//       continue;
+//     } else {
+//       newArr.push(a[i]);
+//     }
+//   }
+//   return newArr;
+// }
+// console.log(arrayDiff(arr1, arr2));
