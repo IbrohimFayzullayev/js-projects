@@ -153,3 +153,39 @@
 //   return newArr;
 // }
 // console.log(arrayDiff(arr1, arr2));
+
+// ** Pete, the baker 5kyu
+
+function cakes(recipe, available) {
+  // TODO: insert code
+  let count = 100;
+  let ct1 = Object.keys(recipe);
+  let ct2 = Object.keys(available);
+  if (ct1.length <= ct2.length) {
+    for (let el of Object.entries(recipe)) {
+      for (let el1 of Object.entries(available)) {
+        if (el[0] == el1[0]) {
+          let min = Math.trunc(el1[1] / el[1]);
+          if (count > min) {
+            count = min;
+          }
+        }
+      }
+    }
+    return count;
+  } else {
+    return 0;
+  }
+}
+console.log(
+  cakes(
+    { apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 },
+    { sugar: 500, flour: 2000, milk: 2000 }
+  )
+);
+console.log(
+  cakes(
+    { flour: 500, sugar: 200, eggs: 1 },
+    { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
+  )
+);
