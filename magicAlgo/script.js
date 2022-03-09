@@ -109,3 +109,8 @@
 //   console.log(`[${strA}]`);
 // }
 // check(l1, l2);
+// ** Parolni topish 9-masala
+let s = "ooo???xxxx";
+function check(s) {}
+
+check(s);

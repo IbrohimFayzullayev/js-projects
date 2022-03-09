@@ -226,13 +226,28 @@
 // }
 
 // ** Clock in Mirror 6kyu
-function WhatIsTheTime(timeInMirror) {
-  //"05:25" --> "06:35";
-  // Happy Coding
-  let time = timeInMirror;
-  let hour = Number(time.substring(0, 2));
-  let minute = Number(time.slice(3, 5));
+// function WhatIsTheTime(timeInMirror) {
+//   //"05:25" --> "06:35";
+//   // Happy Coding
+//   let time = timeInMirror;
+//   let hour = Number(time.substring(0, 2));
+//   let minute = Number(time.slice(3, 5));
+// }
+// WhatIsTheTime("06:35"); // -> "05:25"
+// WhatIsTheTime("11:59"); // -> "12:01"
+// WhatIsTheTime("12:02"); // -> "11:58"
+
+// ** Matrix Determinant 4kyu
+
+function determinant(m) {
+  // return the determinant of the matrix passed in
 }
-WhatIsTheTime("06:35"); // -> "05:25"
-WhatIsTheTime("11:59"); // -> "12:01"
-WhatIsTheTime("12:02"); // -> "11:58"
+let m1 = [
+  [1, 3],
+  [2, 5],
+];
+let m2 = [
+  [2, 5, 3],
+  [1, -2, -1],
+  [1, 3, 4],
+];
