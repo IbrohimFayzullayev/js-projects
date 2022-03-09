@@ -119,3 +119,57 @@
 //   }
 // };
 // calc(n, a, b);
+
+// let salom = function (ism) {
+//   return function (family) {
+//     return function (yosh) {
+//       console.log(`${ism} - ${family} - ${yosh}`);
+//     };
+//   };
+// };
+// salom("Ibrohim")("Fayzullayev")(20);
+// let fam = salom("Ibrohim");
+// let ff = fam("Fayzullayev");
+// ff(20);
+
+// let tatu = {
+//   name: "Toshkent Axborot Texnologiyalar Univeristeti",
+//   rektor: "Alisher",
+//   ustozlar: 300,
+//   davomat(jami, yoqlar) {
+//     console.log(
+//       `${this.name}da ${jami} ta talaba bor bugun ${yoqlar} ta talaba darsga kelmadi`
+//     );
+//   },
+// };
+// tatu.davomat(30, 10);
+
+// let dav = tatu.davomat;
+
+// let milliy = {
+//   name: "Milliy Universitet",
+// };
+// let ar = [40, 5];
+// dav.apply(milliy, ar);
+
+// let politex = {
+//   name: "Politexnika",
+// };
+// dav.call(politex, 45, 6);
+
+// let me = {
+//   name: "Ibrohim",
+//   order(job, age, loc) {
+//     console.log(`${this.name} ${age} yoshda ${job} Developer bo'lib ishlaydi`);
+//   },
+// };
+// let newOrder = me.order;
+// me.order("Java", 21);
+
+// let you = {
+//   name: "Alex",
+// };
+
+// let youOrder = newOrder.bind(you);
+// youOrder("Frontend", 20);
+// youOrder("Backend", 21);
