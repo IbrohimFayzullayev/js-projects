@@ -173,3 +173,12 @@
 // let youOrder = newOrder.bind(you);
 // youOrder("Frontend", 20);
 // youOrder("Backend", 21);
+
+let phone = {};
+phone.count = 10;
+phone.buy = function () {
+  console.log(this.count++);
+};
+console.log(phone.count);
+let func1 = phone.buy.bind(phone);
+document.querySelector(".btn1").addEventListener("click", func1);
