@@ -84,3 +84,38 @@
 // };
 
 // result(num, str);
+// let a = Number(prompt("Birinchi sonni kirit"));
+// let b = Number(prompt("Ikkinchi sonni kirit"));
+// let n = Number(prompt("Amalni kirit 1 - +,2 - -, 3 - *, 4 - /"));
+// let add = function (a, b) {
+//   console.log(a + b);
+// };
+// let multi = function (a, b) {
+//   console.log(a * b);
+// };
+// let divis = function (a, b) {
+//   console.log(a - b);
+// };
+// let devide = function (a, b) {
+//   console.log(a / b);
+// };
+// let calc = function (n, a, b) {
+//   switch (n) {
+//     case 1:
+//       add(a, b);
+//       break;
+//     case 2:
+//       divis(a, b);
+//       break;
+//     case 3:
+//       multi(a, b);
+//       break;
+//     case 4:
+//       devide(a, b);
+//       break;
+//     default:
+//       console.log("xato raqam kiritdingiz");
+//       break;
+//   }
+// };
+// calc(n, a, b);
