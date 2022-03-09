@@ -196,31 +196,43 @@
 
 // ** Casino chips 6kyu
 // me output
-function solve(arr) {
-  let max = arr[0];
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-    if (max < arr[i]) {
-      max = arr[i];
-    }
-  }
-  if (sum - max < max) {
-    console.log(sum - max);
-  } else {
-    console.log(Math.trunc(sum / 2));
-  }
-}
-solve([1, 1, 1]); // => 1
-solve([1, 2, 1]); // => 2
-solve([4, 1, 1]); // => 2
-solve([8, 2, 8]); // => 9
-solve([8, 1, 4]); // => 5
-solve([7, 4, 10]); // => 10
-solve([12, 12, 12]); //// => 18
+// function solve(arr) {
+//   let max = arr[0];
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//     if (max < arr[i]) {
+//       max = arr[i];
+//     }
+//   }
+//   if (sum - max < max) {
+//     console.log(sum - max);
+//   } else {
+//     console.log(Math.trunc(sum / 2));
+//   }
+// }
+// solve([1, 1, 1]); // => 1
+// solve([1, 2, 1]); // => 2
+// solve([4, 1, 1]); // => 2
+// solve([8, 2, 8]); // => 9
+// solve([8, 1, 4]); // => 5
+// solve([7, 4, 10]); // => 10
+// solve([12, 12, 12]); //// => 18
 
 // codewars output
 // function solve(arr) {
 //   var [a, b, c] = arr.sort((x, y) => x - y);
 //   return Math.min(a + b, ~~((a + b + c) / 2));
 // }
+
+// ** Clock in Mirror 6kyu
+function WhatIsTheTime(timeInMirror) {
+  //"05:25" --> "06:35";
+  // Happy Coding
+  let time = timeInMirror;
+  let hour = Number(time.substring(0, 2));
+  let minute = Number(time.slice(3, 5));
+}
+WhatIsTheTime("06:35"); // -> "05:25"
+WhatIsTheTime("11:59"); // -> "12:01"
+WhatIsTheTime("12:02"); // -> "11:58"
