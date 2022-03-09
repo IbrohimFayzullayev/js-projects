@@ -239,15 +239,15 @@
 
 // ** Matrix Determinant 4kyu
 
-function determinant(m) {
-  // return the determinant of the matrix passed in
-}
-let m1 = [
-  [1, 3],
-  [2, 5],
-];
-let m2 = [
-  [2, 5, 3],
-  [1, -2, -1],
-  [1, 3, 4],
-];
+// function determinant(m) {
+//   // return the determinant of the matrix passed in
+// }
+// let m1 = [
+//   [1, 3],
+//   [2, 5],
+// ];
+// let m2 = [
+//   [2, 5, 3],
+//   [1, -2, -1],
+//   [1, 3, 4],
+// ];
