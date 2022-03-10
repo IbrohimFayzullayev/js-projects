@@ -232,7 +232,30 @@
 // console.log(nums.splice(2, 2, "salom"));
 // console.log(nums);
 
-let arr = [1, 2, 3, 4, 5, 6];
-arr.forEach(function (val, key, arr) {
-  console.log(val);
-});
+// let arr = [1, 2, 3, 4, 5, 6];
+// arr.forEach(function (val, key, arr) {
+//   console.log(val);
+// });
+
+// umidClick = {
+//   name: "Umid Rustamov",
+//   balans: 1000,
+//   transaction: [],
+//   pin: 1111,
+// };
+// ibrohimClick = {
+//   name: "Ibrohim",
+//   balans: 2000,
+//   transaction: [],
+//   pin: 2222,
+// };
+// let otkazma = function (jonatuvchi, qabulQiluvchi) {
+//   let pinKod = Number(-prompt("Parolni kirit:"));
+//   if (pinKod === jonatuvchi.pin) {
+//     let pul = prompt("qancha pul jonatmoqchisiz");
+//   } else {
+//     console.log("Parol xato");
+//   }
+// };
+
+let arr = [100, 300, -233, 200, -400, 555];
