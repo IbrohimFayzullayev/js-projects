@@ -192,3 +192,47 @@
 // console.log(phone.count);
 // let func1 = phone.buy.bind(phone);
 // document.querySelector(".btn1").addEventListener("click", func1);
+
+// * 10.03.2022
+
+(function () {
+  console.log("Hello");
+})();
+// const func = function () {
+//   let sana = 0;
+//   return function () {
+//     console.log(sana++);
+//   };
+// };
+// let func1 = func();
+// func1();
+// func1();
+// func1();
+// let arr = [2, 4, 5, 6, 12, 3, 5];
+// let max = arr[0];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+//   if (max < arr[i]) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max, sum);
+
+// let arr = ["s", "d", 12, "f", 8];
+// let ar = arr.slice(-1);
+// console.log(ar);
+// arr.splice(0, 2);
+// console.log(arr);
+// let nums = [1, 2, 3, 4, 5, 6];
+// console.log(nums.reverse());
+
+// let all = arr.concat(nums);
+// console.log(all);
+// console.log(nums.splice(2, 2, "salom"));
+// console.log(nums);
+
+let arr = [1, 2, 3, 4, 5, 6];
+arr.forEach(function (val, key, arr) {
+  console.log(val);
+});
