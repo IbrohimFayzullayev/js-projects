@@ -111,6 +111,34 @@
 // check(l1, l2);
 // ** Parolni topish 9-masala
 let s = "ooo???xxxx";
-function check(s) {}
+function check(s) {
+  let ok = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] == "o") {
+      ok++;
+    }
+  }
+  console.log(ok);
+  let total = 0;
+  for (let a = 0; a < 10; a++) {
+    for (let b = 0; b < 10; b++) {
+      for (let c = 0; c < 10; c++) {
+        for (let d = 0; d < 10; d++) {
+          if (s[a] == "x" || s[b] == "x" || s[c] == "x" || s[d] == "x")
+            continue;
+          let sum = new Set();
+          if (s[a] == "o") sum.add(a);
+          if (s[b] == "o") sum.add(b);
+          if (s[c] == "o") sum.add(c);
+          if (s[d] == "o") sum.add(d);
+          if (sum.size == ok) {
+            total++;
+          }
+        }
+      }
+    }
+  }
+  console.log(total);
+}
 
 check(s);

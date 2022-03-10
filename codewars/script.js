@@ -251,21 +251,30 @@
 //   [1, -2, -1],
 //   [1, 3, 4],
 // ];
-let ints = [10, 5, 2, 3, 7, 5];
-let s = 10;
-function sumPairs(ints, s) {
-  let arr;
-  for (let i = 0; i < ints.length; i++) {
-    for (let j = i; j < ints.length; j++) {
-      arr = [];
-      if (ints[i] + ints[j] == s) {
-        arr.push(ints[i]);
-        arr.push(ints[j]);
-      }
-    }
-  }
-  if (arr.length == 2) {
-    return arr || undefined;
-  }
-}
-console.log(sumPairs(ints, s));
+// let ints = [1, 2, 3, 4, 1, 0];
+// let ints = [10, 5, 2, 3, 7, 5];
+// let s = 10;
+// function sumPairs(ints, s) {
+//   let arr = [ints.length, ints.length];
+//   let result = [];
+//   let count = 0;
+//   for (let i = 0; i < ints.length; i++) {
+//     for (let j = i + 1; j < ints.length; j++) {
+//       if (ints[i] + ints[j] == s) {
+//         if (arr[1] > j) {
+//           arr = [];
+//           arr.push(i, j);
+//           result = [];
+//           result.push(ints[i], ints[j]);
+//           count++;
+//         }
+//       }
+//     }
+//   }
+//   if (result.length == 2 && count >= 1) {
+//     return result;
+//   } else {
+//     return undefined;
+//   }
+// }
+// console.log(sumPairs(ints, s));
