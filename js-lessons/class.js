@@ -258,21 +258,40 @@
 //   }
 // };
 
-let arr = [100, 300, -233, 200, -400, 555];
+// let arr = [100, 300, -233, 200, -400, 555];
 
-arr.forEach((value, key) => {
-  if (value > 0) {
-    console.log(`Pul tushdi ${key + 1} : ${value}`);
-  } else {
-    console.log(`Pul yechildi ${key + 1} : ${value}`);
-  }
-});
+// arr.forEach((value, key) => {
+//   if (value > 0) {
+//     console.log(`Pul tushdi ${key + 1} : ${value}`);
+//   } else {
+//     console.log(`Pul yechildi ${key + 1} : ${value}`);
+//   }
+// });
 
-let valyuta = new Map([
-  ["USD", "Amerika dollari"],
-  ["RUBL", "Rossiya rubli"],
-  ["SUM", "O'zbekiston so'mi"],
-]);
-valyuta.forEach(function (val, key) {
-  console.log(`Valyuta : ${key} - ${val}`);
+// let valyuta = new Map([
+//   ["USD", "Amerika dollari"],
+//   ["RUBL", "Rossiya rubli"],
+//   ["SUM", "O'zbekiston so'mi"],
+// ]);
+// valyuta.forEach(function (val, key) {
+//   console.log(`Valyuta : ${key} - ${val}`);
+// });
+
+let arr = [12, 20, 30, 40, 50];
+let x = arr.map(function (val, key) {
+  return val * 10;
 });
+console.log(arr);
+console.log(x);
+
+let dollar = [100, 200, 88, 90, 300, 450];
+let dollarToSum = 10900;
+let uzs = dollar.map(function (val) {
+  return val * dollarToSum;
+});
+console.log(dollar);
+console.log(uzs);
+let uzs1 = dollar.filter(function (val) {
+  return val % 100 == 0;
+});
+console.log(uzs1);
