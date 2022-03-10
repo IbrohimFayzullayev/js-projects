@@ -43,13 +43,23 @@
 //   console.log(suz.toLowerCase());
 // }
 // function birinchiHarf(suz) {
-//   let arr = suz.split(" ");
-//   for (let i = 0; i < arr.length; i++) {
-//     arr[i] = arr[i][0].toUpperCase() + arr[i].substr(1);
+//   let newArr = [];
+//   for (let i = 0; i < suz.length; i++) {
+//     if (suz[i] == " " || suz[i] == "-") {
+//       newArr.push(" ");
+//     } else {
+//       newArr.push(suz[i]);
+//     }
 //   }
-//   let str1 = arr.join(" ");
+//   let arr1 = newArr.join("");
+//   let arr = arr1.split(" ");
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i][0].toUpperCase() + arr[i].substr(1).toLowerCase();
+//   }
+//   let str1 = arr.join("");
 //   console.log(str1);
 // }
+// birinchiHarf("cODE-warS");
 // function camelCase(suz) {
 //   let arr = [];
 //   arr.push(suz[0].toLowerCase());
@@ -174,11 +184,11 @@
 // youOrder("Frontend", 20);
 // youOrder("Backend", 21);
 
-let phone = {};
-phone.count = 10;
-phone.buy = function () {
-  console.log(this.count++);
-};
-console.log(phone.count);
-let func1 = phone.buy.bind(phone);
-document.querySelector(".btn1").addEventListener("click", func1);
+// let phone = {};
+// phone.count = 10;
+// phone.buy = function () {
+//   console.log(this.count++);
+// };
+// console.log(phone.count);
+// let func1 = phone.buy.bind(phone);
+// document.querySelector(".btn1").addEventListener("click", func1);

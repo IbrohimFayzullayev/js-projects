@@ -278,3 +278,44 @@
 //   }
 // }
 // console.log(sumPairs(ints, s));
+// ** Arabian String 6kyu
+// let str = "example name";
+// function camelize(str) {
+//   let txt = str.toLowerCase();
+// }
+// camelize(str);
+// ** What century is it? 6kyu
+// me code
+// let year = "1234";
+// function whatCentury(year) {
+//   let xx = Number(year.substr(0, 2));
+//   let yy = Number(year.substr(2, 2));
+//   let re;
+//   if (yy == 0) {
+//     re = xx;
+//   } else {
+//     re = xx + 1;
+//   }
+//   let res = String(re);
+//   let num = Number(res.substr(1, 1));
+//   let ted;
+//   if (res == 11 || res == 12 || res == 13) {
+//     ted = "th";
+//   } else if (num == 1) {
+//     ted = "st";
+//   } else if (num == 2) {
+//     ted = "nd";
+//   } else if (num == 3) {
+//     ted = "rd";
+//   } else {
+//     ted = "th";
+//   }
+//   console.log(res + ted);
+// }
+// whatCentury(year);
+// ** site code
+// function whatCentury(year)
+// {
+//   var century = Math.ceil(year/100);
+//   return century + (century < 20 ? 'th' : ['th', 'st', 'nd', 'rd'][century % 10] || 'th');
+// }
