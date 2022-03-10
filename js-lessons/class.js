@@ -259,3 +259,20 @@
 // };
 
 let arr = [100, 300, -233, 200, -400, 555];
+
+arr.forEach((value, key) => {
+  if (value > 0) {
+    console.log(`Pul tushdi ${key + 1} : ${value}`);
+  } else {
+    console.log(`Pul yechildi ${key + 1} : ${value}`);
+  }
+});
+
+let valyuta = new Map([
+  ["USD", "Amerika dollari"],
+  ["RUBL", "Rossiya rubli"],
+  ["SUM", "O'zbekiston so'mi"],
+]);
+valyuta.forEach(function (val, key) {
+  console.log(`Valyuta : ${key} - ${val}`);
+});
