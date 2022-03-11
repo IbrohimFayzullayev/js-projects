@@ -267,17 +267,86 @@
 //   }
 // }
 // battle("ONE", "NEO");
-let str = "The_Stealth_Warrior";
-function toCamelCase(str) {
-  let st = [];
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] == "_" || str[i] == "-") {
-      st.push(str[i + 1].toUpperCase());
-      i++;
-    } else {
-      st.push(str[i]);
+// let str = "The_Stealth_Warrior";
+// function toCamelCase(str) {
+//   let st = [];
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] == "_" || str[i] == "-") {
+//       st.push(str[i + 1].toUpperCase());
+//       i++;
+//     } else {
+//       st.push(str[i]);
+//     }
+//   }
+//   console.log(st.join(""));
+// }
+// toCamelCase(str);
+// let nums = [2, 2, 2, 2, 2];
+// let target = 8;
+// var fourSum = function (nums, target) {
+//   let arr = [];
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       for (let k = j + 1; k < nums.length; k++) {
+//         for (let l = k + 1; l < nums.length; l++) {
+//           if (nums[i] + nums[j] + nums[k] + nums[l] == target) {
+//             if (arr.length == 0) {
+//               arr.push([nums[i], nums[j], nums[k], nums[l]]);
+//             } else {
+//               for (let c = 0; c < arr.length; c++) {
+//                 if (
+//                   arr[c][0] !== i ||
+//                   arr[c][1] !== j ||
+//                   arr[c][2] !== k ||
+//                   arr[c][3] !== l
+//                 ) {
+//                   arr.push([nums[i], nums[j], nums[k], nums[l]]);
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   return arr;
+// };
+// console.log(fourSum(nums, target));
+
+// let myMap = new Map([
+//   ["aa", "birinchi"],
+//   ["bb", "ikkinchi"],
+// ]);
+
+// console.log(myMap.get("aa"));
+
+// let arr = ["F", "S", "V", "A"];
+// let mapNew = new Map();
+// mapNew.set("salom", arr);
+// console.log(mapNew);
+let arr = [1, 2, 3, 4, 5, 6];
+let sum = arr.reduce(function (sum1, val, key) {
+  return sum1 + val;
+}, 0);
+// console.log(sum);
+let max;
+
+let findMax = function (arr) {
+  // //** find with for
+  for (let i = 0; i < arr.length; i++) {
+    max = arr[0];
+    if (max < arr[i]) {
+      max = arr[i];
     }
   }
-  console.log(st.join(""));
-}
-toCamelCase(str);
+  return max;
+};
+// console.log(findMax(arr));
+let maxm = arr.reduce(function (big, val) {
+  if (big > val) {
+    return val;
+  } else {
+    return big;
+  }
+}, arr[0]);
+console.log(maxm);
