@@ -195,9 +195,9 @@
 
 // * 10.03.2022
 
-(function () {
-  console.log("Hello");
-})();
+// (function () {
+//   console.log("Hello");
+// })();
 // const func = function () {
 //   let sana = 0;
 //   return function () {
@@ -277,21 +277,21 @@
 //   console.log(`Valyuta : ${key} - ${val}`);
 // });
 
-let arr = [12, 20, 30, 40, 50];
-let x = arr.map(function (val, key) {
-  return val * 10;
-});
-console.log(arr);
-console.log(x);
+// let arr = [12, 20, 30, 40, 50];
+// let x = arr.map(function (val, key) {
+//   return val * 10;
+// });
+// console.log(arr);
+// console.log(x);
 
-let dollar = [100, 200, 88, 90, 300, 450];
-let dollarToSum = 10900;
-let uzs = dollar.map(function (val) {
-  return val * dollarToSum;
-});
-console.log(dollar);
-console.log(uzs);
-let uzs1 = dollar.filter(function (val) {
-  return val % 100 == 0;
-});
-console.log(uzs1);
+// let dollar = [100, 200, 88, 90, 300, 450];
+// let dollarToSum = 10900;
+// let uzs = dollar.map(function (val) {
+//   return val * dollarToSum;
+// });
+// console.log(dollar);
+// console.log(uzs);
+// let uzs1 = dollar.filter(function (val) {
+//   return val % 100 == 0;
+// });
+// console.log(uzs1);
