@@ -411,3 +411,66 @@
 //   }
 //   return '';
 // }
+
+// // Where my anagrams at? 5kyu
+// //  me output
+// let word = "racer";
+// let words = ["crazer", "carer", "racar", "caers", "racer"];
+// function anagrams(word, words) {
+//   let wr = word.split("").sort();
+//   let arrWords = [];
+//   for (let i = 0; i < words.length; i++) {
+//     let ws;
+//     if (words[i].length == wr.length) {
+//       ws = words[i].split("").sort().join(",");
+//     }
+//     if (ws == wr) {
+//       arrWords.push(words[i]);
+//     }
+//   }
+//   console.log(arrWords);
+// }
+// anagrams(word, words);
+
+// // other coder output
+// String.prototype.sort = function() {
+//   return this.split("").sort().join("");
+// };
+
+// function anagrams(word, words) {
+//   return words.filter(function(x) {
+//       return x.sort() === word.sort();
+//   });
+// }
+
+// // Moving Zeros To The End 5kyu
+// //  me output
+// let arr = [false, 1, 0, 1, 2, 0, 1, 3, "a"];
+// function moveZeros(arr) {
+//   let result = [];
+//   let zero = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 0) {
+//       zero.push(arr[i]);
+//     } else {
+//       result.push(arr[i]);
+//     }
+//   }
+//   let res = [...result, ...zero];
+//   console.log(res);
+// }
+// moveZeros(arr);
+
+// // Other coder output
+// var moveZeros = function (arr) {
+//   return arr
+//     .filter(function (x) {
+//       return x !== 0;
+//     })
+//     .concat(
+//       arr.filter(function (x) {
+//         return x === 0;
+//       })
+//     );
+// };
+// console.log(moveZeros(arr));
