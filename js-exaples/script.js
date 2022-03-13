@@ -324,29 +324,29 @@
 // let mapNew = new Map();
 // mapNew.set("salom", arr);
 // console.log(mapNew);
-let arr = [1, 2, 3, 4, 5, 6];
-let sum = arr.reduce(function (sum1, val, key) {
-  return sum1 + val;
-}, 0);
-// console.log(sum);
-let max;
+// let arr = [1, 2, 3, 4, 5, 6];
+// let sum = arr.reduce(function (sum1, val, key) {
+//   return sum1 + val;
+// }, 0);
+// // console.log(sum);
+// let max;
 
-let findMax = function (arr) {
-  // //** find with for
-  for (let i = 0; i < arr.length; i++) {
-    max = arr[0];
-    if (max < arr[i]) {
-      max = arr[i];
-    }
-  }
-  return max;
-};
-// console.log(findMax(arr));
-let maxm = arr.reduce(function (big, val) {
-  if (big > val) {
-    return val;
-  } else {
-    return big;
-  }
-}, arr[0]);
-console.log(maxm);
+// let findMax = function (arr) {
+//   // //** find with for
+//   for (let i = 0; i < arr.length; i++) {
+//     max = arr[0];
+//     if (max < arr[i]) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// };
+// // console.log(findMax(arr));
+// let maxm = arr.reduce(function (big, val) {
+//   if (big > val) {
+//     return val;
+//   } else {
+//     return big;
+//   }
+// }, arr[0]);
+// console.log(maxm);

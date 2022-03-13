@@ -319,3 +319,95 @@
 //   var century = Math.ceil(year/100);
 //   return century + (century < 20 ? 'th' : ['th', 'st', 'nd', 'rd'][century % 10] || 'th');
 // }
+
+// let n = 40;
+// let tubSon = function (n) {
+//   let count;
+//   for (let i = 1; i < n; i++) {
+//     count = 0;
+//     for (let j = i; j > 0; j--) {
+//       if (i % j == 0) {
+//         count++;
+//       }
+//     }
+//     if (count == 2) {
+//       console.log(i);
+//       count = 0;
+//     }
+//   }
+// };
+// tubSon(n);
+
+// ** Simple Pig Latin 5kyu
+
+// function pigIt(str) {
+//   //Code here
+//   let strArr = str.split(" ");
+//   for (let i = 0; i < strArr.length; i++) {
+//     let first = strArr[i][0];
+//     strArr.splice([i][0], 1);
+//   }
+//   console.log(strArr);
+// }
+
+// pigIt("Pig latin is cool"); // igPay atinlay siay oolcay
+// pigIt("Hello world !"); //  elloHay orldway !
+// let n = 3;
+// var fibonacci = function (n) {
+//   if (n == 0 || n == 1) return n;
+//   let arr = [0, 1];
+//   for (let i = 2; i <= n; i++) {
+//     arr.push(arr[i - 1] + arr[i - 2]);
+//   }
+//   return arr[arr.length - 1];
+// };
+// console.log(fibonacci(n));
+
+// // First non-repeating character 5kyu
+///// me output
+// let s = "a";
+// console.log(s.length);
+// function firstNonRepeatingLetter(s) {
+//   // Add your code here
+//   let count;
+//   let ct = 0;
+//   if (s.length > 0) {
+//     let str = s.toLowerCase();
+//     for (let i = 0; i < str.length; i++) {
+//       count = 0;
+//       for (let j = i + 1; j < str.length; j++) {
+//         if (str[i] === str[j]) {
+//           count++;
+//         }
+//       }
+//       for (let k = i - 1; k >= 0; k--) {
+//         if (str[i] == str[k]) {
+//           count++;
+//         }
+//       }
+//       if (count === 0) {
+//         console.log(s[i]);
+//         break;
+//       } else {
+//         ct++;
+//       }
+//     }
+//     if (ct == s.length) {
+//       console.log(undefined);
+//     }
+//   } else {
+//     console.log(undefined);
+//   }
+// }
+
+// firstNonRepeatingLetter(s);
+
+//// Other coder output
+// function firstNonRepeatingLetter(s) {
+//   for(var i in s) {
+//     if(s.match(new RegExp(s[i],"gi")).length === 1) {
+//       return s[i];
+//     }
+//   }
+//   return '';
+// }
