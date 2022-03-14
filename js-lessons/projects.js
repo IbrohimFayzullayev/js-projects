@@ -88,10 +88,10 @@
 // console.log(converter(50));
 
 let num = 2.23865024;
-console.log(typeof num.toFixed(2));
-console.log(num.toFixed(4));
-
+// console.log(typeof num.toFixed(2));
+// console.log(num.toFixed(4));
+console.log(num.toFixed(2));
 let x = "24";
 x = +x;
-console.log(x);
-console.log((2.999).toFixed(2));
+// console.log(x);
+// console.log((2.999).toFixed(2));

@@ -536,3 +536,89 @@
 // } else {
 //   console.log(res);
 // }
+// let s1 = "my&friend&Paul has heavy hats! &";
+// let s2 = "my friend John has many many friends &";
+// let s1Sort = s1.split("").sort().join("").trim();
+// let s2Sort = s2.split("").sort().join("").trim();
+// console.log(s1Sort);
+// console.log(s2Sort);
+// function mix(s1, s2) {
+//   // your code
+// }
+
+// // Extract the domain name from a URL 5kyu
+
+// let str = "http://google.com";
+// function domainName(url) {
+//   let first;
+//   for (let i = 0; i < url.length; i++) {
+//     if (url[i] == "/") {
+//       first = i + 2;
+//       break;
+//     } else if (url[i] == ".") {
+//       first = i + 1;
+//       break;
+//     }
+//   }
+//   let second;
+//   for (let i = first; i < url.length; i++) {
+//     if (url[i] == ".") {
+//       second = i;
+//       break;
+//     }
+//   }
+//   console.log(url.slice(first, second));
+// }
+// domainName("http://google.com");
+// domainName("www.xakep.ru");
+// domainName("http://google.co.jp");
+// domainName("https://youtube.com");
+// domainName("http://github.com/carbonfive/raygun");
+// domainName("www.textwww.com");
+// domainName("www.abcwww.com");
+// domainName("http://www.google.com");
+
+// //
+
+// var maxSequence = function (arr) {
+//   let sum1;
+//   let sum2;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum1 = 0;
+//     sum2 = 0;
+//     for (let j = i; j < arr.length; j++) {
+//       sum2 += arr[j];
+//       if (sum1 < sum2) {
+//         sum1 = sum2;
+//         // sum2 = 0;
+//       }
+//     }
+//   }
+//   console.log(sum1);
+// };
+// maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+
+function alphanumeric(string) {
+  //your code here
+  // let str = string.split("").sort().join("");
+  // if (str[0] == " " || str[0] == "_" || str[0] == "") {
+  //   console.log(false);
+  // } else {
+  //   console.log(true);
+  // }
+  // console.log(str);
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == " " || string[i] == "_" || string[i] == "!") {
+      count++;
+      break;
+    }
+  }
+  if (count == 1) {
+    console.log(false);
+  } else {
+    console.log(true);
+  }
+}
+
+alphanumeric("EqMgEatY_oBJmuWm5qmv");
