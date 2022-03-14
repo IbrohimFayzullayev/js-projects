@@ -474,3 +474,65 @@
 //     );
 // };
 // console.log(moveZeros(arr));
+
+// // Gap in Primes 5kyu
+// function tubSon() {
+//   let res = new Array(1100000).fill(false);
+//   let ans = [];
+//   for (let i = 2; i < 1100000 / 2; i++)
+//     for (let j = i + i; j < 1100000; j += i) res[j] = true;
+//   for (let i = 2; i < 1100000; i++) if (!res[i]) ans.push(i);
+//   console.log(ans);
+// }
+
+// tubSon();
+
+// let g = 8;
+// let m = 300;
+// let n = 400;
+// function gap(g, m, n) {
+//   // your code
+//   let res = new Array(n + 5).fill(false);
+//   let ans = [];
+//   for (let i = 2; i < (n + 2) / 2; i++)
+//     for (let j = i + i; j < n + 2; j += i) res[j] = true;
+//   for (let i = m; i <= n; i++) if (!res[i]) ans.push(i);
+//   for (let i = 0; i < ans.length; i++) {
+//     if (ans[i + 1] - ans[i] == g) return [ans[i], ans[i + 1]];
+//   }
+//   return null;
+// }
+// console.log(gap(g, m, n));
+// for (let i = m; i < n; i++) {
+//   let count = 0;
+//   for (let j = i; j > 0; j--) {
+//     if (i % j == 0) {
+//       count++;
+//     }
+//   }
+//   rr = [];
+//   if (count == 2) {
+//     res.push(i);
+//   }
+// }
+// for (let k = 0; k < res.length; k++) {
+//   if (res[k] - res[k - 1] == g) {
+//     rr.push(res[k - 1]);
+//     rr.push(res[k]);
+//     break;
+//   }
+// }
+// console.log(rr);
+// let result = [];
+// for (let i = 0; i < tubArr.length; i++) {
+//   if (tubArr[i] - tubArr[i - 1] == g) {
+//     result.push(tubArr[i - 1]);
+//     result.push(tubArr[i]);
+//     break;
+//   }
+// }
+// if (res.length < 2) {
+//   console.log(null);
+// } else {
+//   console.log(res);
+// }
