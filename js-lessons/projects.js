@@ -46,3 +46,52 @@
 //   return yuan + "0" + " " + "Chinese Yuan";
 // }
 // console.log(usdcny(5338));
+
+// let arr = [2, 3, 4, 5, 6];
+// arr.fill("@");
+// // console.log(arr);
+// let y = new Array(20);
+// // y.fill(function (key) {
+// //   return key + 1;
+// // });
+// let z = Array.from({ length: 20 }, function (val, key) {
+//   return key * 2 + 1;
+// });
+// let d = Array.from({ length: 20 }, function (val, key) {
+//   return key * 2 + 2;
+// });
+// let tub = Array.from({ length: 60 }, function (val, key) {
+//   let count = 0;
+//   for (let i = key; i > 0; i--) {
+//     if (key % i == 0) {
+//       count++;
+//     }
+//   }
+//   if (count === 2) {
+//     return key;
+//   }
+// });
+// let tub1 = new Set(tub);
+// let n = new Array(...tub1);
+// n.splice(0, 1);
+// console.log(n);
+
+// let frm = Array.from({ length: 30 }, function (val, key) {
+//   return key + 1;
+// });
+// console.log(frm);
+
+// calculator = (a, b, ॱ) => eval(a + ॱ + b);
+// console.log(calculator(20, 5, "+"));
+
+// converter = lambda n: ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"][n];
+// console.log(converter(50));
+
+let num = 2.23865024;
+console.log(typeof num.toFixed(2));
+console.log(num.toFixed(4));
+
+let x = "24";
+x = +x;
+console.log(x);
+console.log((2.999).toFixed(2));
