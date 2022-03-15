@@ -598,27 +598,58 @@
 // };
 // maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
 
-function alphanumeric(string) {
-  //your code here
-  // let str = string.split("").sort().join("");
-  // if (str[0] == " " || str[0] == "_" || str[0] == "") {
-  //   console.log(false);
-  // } else {
-  //   console.log(true);
-  // }
-  // console.log(str);
-  let count = 0;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] == " " || string[i] == "_" || string[i] == "!") {
-      count++;
-      break;
-    }
-  }
-  if (count == 1) {
-    console.log(false);
-  } else {
-    console.log(true);
-  }
-}
+// function alphanumeric(string) {
+//your code here
+// let str = string.split("").sort().join("");
+// if (str[0] == " " || str[0] == "_" || str[0] == "") {
+//   console.log(false);
+// } else {
+//   console.log(true);
+// }
+// console.log(str);
+//   let count = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] == " " || string[i] == "_" || string[i] == "!") {
+//       count++;
+//       break;
+//     }
+//   }
+//   if (count == 1) {
+//     console.log(false);
+//   } else {
+//     console.log(true);
+//   }
+// }
 
-alphanumeric("EqMgEatY_oBJmuWm5qmv");
+// alphanumeric("EqMgEatY_oBJmuWm5qmv");
+// //  me output code below
+// const small = "abcdefghijklmnopqrstuvwxyz".split("");
+// const big = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+// // console.log(small);
+// // console.log(big);
+// let all = [...big, ...small];
+// // console.log(all);
+// let string = "The quick brown fox jumps over the lazy dog.";
+// function isPangram(string) {
+//   const small = "abcdefghijklmnopqrstuvwxyz".split("");
+//   let str = string.toLowerCase();
+//   let count = 0;
+//   for (let i = 0; i < 26; i++) {
+//     if (str.includes(small[i])) {
+//       count++;
+//     }
+//   }
+//   if (count == 26) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
+// // other coder below
+// function isPangram(string) {
+//   string = string.toLowerCase();
+//   return "abcdefghijklmnopqrstuvwxyz".split("").every(function (x) {
+//     return string.indexOf(x) !== -1;
+//   });
+// }
+// console.log(isPangram(string));

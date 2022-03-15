@@ -87,11 +87,94 @@
 // converter = lambda n: ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"][n];
 // console.log(converter(50));
 
-let num = 2.23865024;
-// console.log(typeof num.toFixed(2));
-// console.log(num.toFixed(4));
-console.log(num.toFixed(2));
-let x = "24";
-x = +x;
+// let num = 2.23865024;
+// // console.log(typeof num.toFixed(2));
+// // console.log(num.toFixed(4));
+// console.log(num.toFixed(2));
+// let x = "24";
+// x = +x;
 // console.log(x);
 // console.log((2.999).toFixed(2));
+
+// let c = Number.parseInt("265pd");
+// console.log(c);
+// let d = Number.parseFloat("23.455kkdd");
+// console.log(d);
+
+// console.log(isNaN(8)); // false
+// console.log(isNaN(+"aas10")); // true
+// console.log(Number.isFinite(12.56)); // true
+// console.log(Number.isInteger(12.33)); // false
+
+// let str = "Hello World!";
+// let repeat1 = str.repeat(5);
+// console.log(repeat1);
+
+// console.log(Math.sqrt(81));
+// console.log(Math.pow(9, 2));
+
+// const arrNumbers = [12, 8, -30, 35, 25];
+// console.log(Math.max(...arrNumbers));
+// console.log(Math.min(...arrNumbers));
+// let ranNum = Math.random() * 10 + 40;
+// console.log(Math.trunc(ranNum));
+
+// function randomNum(start, end) {
+//   let ar = end - start;
+//   let ran = Math.random() * (ar + 1) + start;
+//   console.log(Math.trunc(ran));
+// }
+// randomNum(50, 60);
+// var num = Math.round(10.49);
+// console.log(num); // 10
+// let n = -4.6;
+// console.log(Math.ceil(n));
+let son = 5886;
+let num3 = Math.floor(son / 1000);
+let num1 = Math.floor((son % 1000) / 100);
+let num = son % 10;
+let num2 = Math.floor((son % 100) / 10);
+let arr = [
+  "bir",
+  "ikki",
+  "uch",
+  "tort",
+  "besh",
+  "olti",
+  "yetti",
+  "sakkiz",
+  "to'qqiz",
+];
+let on = [
+  "on",
+  "yigirma",
+  "ottiz",
+  "qirq",
+  "ellik",
+  "oltmish",
+  "yetmish",
+  "sakson",
+  "toqson",
+];
+let result = [];
+for (let i = 0; i < arr.length; i++) {
+  if (num3 == i + 1) {
+    result.push(`${arr[i]} ming`);
+  }
+}
+for (let i = 0; i < arr.length; i++) {
+  if (num1 == i + 1) {
+    result.push(`${arr[i]} yuz`);
+  }
+}
+for (let i = 0; i < on.length; i++) {
+  if (i + 1 == num2) {
+    result.push(on[i]);
+  }
+}
+for (let i = 0; i < arr.length; i++) {
+  if (i + 1 == num) {
+    result.push(arr[i]);
+  }
+}
+console.log(result.join(" "));
