@@ -653,3 +653,18 @@
 //   });
 // }
 // console.log(isPangram(string));
+// let str = "Mg(OH)2";
+// function parseMolecule(formula) {
+//   let str = formula.toLowerCase();
+//   let str1 = [];
+//   for (let i = 0, j = 0; i < str.length; j++, i++) {
+//     if (str[i] == ")" || str[i] == "(" || str[i] == "[" || str[i] == "]") {
+//       continue;
+//     } else {
+//       str1.push(str[i]);
+//     }
+//   }
+//   console.log(str);
+//   console.log(str1);
+// }
+// parseMolecule(str);

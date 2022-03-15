@@ -129,52 +129,90 @@
 // console.log(num); // 10
 // let n = -4.6;
 // console.log(Math.ceil(n));
-let son = 5886;
-let num3 = Math.floor(son / 1000);
-let num1 = Math.floor((son % 1000) / 100);
-let num = son % 10;
-let num2 = Math.floor((son % 100) / 10);
-let arr = [
-  "bir",
-  "ikki",
-  "uch",
-  "tort",
-  "besh",
-  "olti",
-  "yetti",
-  "sakkiz",
-  "to'qqiz",
-];
-let on = [
-  "on",
-  "yigirma",
-  "ottiz",
-  "qirq",
-  "ellik",
-  "oltmish",
-  "yetmish",
-  "sakson",
-  "toqson",
-];
-let result = [];
-for (let i = 0; i < arr.length; i++) {
-  if (num3 == i + 1) {
-    result.push(`${arr[i]} ming`);
-  }
-}
-for (let i = 0; i < arr.length; i++) {
-  if (num1 == i + 1) {
-    result.push(`${arr[i]} yuz`);
-  }
-}
-for (let i = 0; i < on.length; i++) {
-  if (i + 1 == num2) {
-    result.push(on[i]);
-  }
-}
-for (let i = 0; i < arr.length; i++) {
-  if (i + 1 == num) {
-    result.push(arr[i]);
-  }
-}
-console.log(result.join(" "));
+// let son = 5886;
+// let num3 = Math.floor(son / 1000);
+// let num1 = Math.floor((son % 1000) / 100);
+// let num = son % 10;
+// let num2 = Math.floor((son % 100) / 10);
+// let arr = [
+//   "bir",
+//   "ikki",
+//   "uch",
+//   "tort",
+//   "besh",
+//   "olti",
+//   "yetti",
+//   "sakkiz",
+//   "to'qqiz",
+// ];
+// let on = [
+//   "on",
+//   "yigirma",
+//   "ottiz",
+//   "qirq",
+//   "ellik",
+//   "oltmish",
+//   "yetmish",
+//   "sakson",
+//   "toqson",
+// ];
+// let result = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (num3 == i + 1) {
+//     result.push(`${arr[i]} ming`);
+//   }
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   if (num1 == i + 1) {
+//     result.push(`${arr[i]} yuz`);
+//   }
+// }
+// for (let i = 0; i < on.length; i++) {
+//   if (i + 1 == num2) {
+//     result.push(on[i]);
+//   }
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   if (i + 1 == num) {
+//     result.push(arr[i]);
+//   }
+// }
+// console.log(result.join(" "));
+
+// console.log(2_233);
+
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(2 ** 53 - 1);
+// console.log(Number.MIN_SAFE_INTEGER);
+// let y = 14546565656563;
+// let z = 22355655666565n;
+// let x = z * BigInt(y);
+// console.log(x);
+// let d = 2n;
+// let f = 98n;
+// console.log(d ** f);
+
+// let kecha = new Date(2022, 2, 14, 15, 30, 24);
+// console.log(kecha);
+// let otgankun = new Date("March, 13, 2022");
+// console.log(otgankun);
+// console.log(new Date(2001, 9, 20));
+// console.log(new Date(10 * 24 * 60 * 60 * 1000));
+
+// let hozir = new Date();
+// let now = new Date();
+// let bugun = hozir.getTime();
+// let keyin = 365 * 5 * 24 * 60 * 60 * 1000;
+// let birKun = 24 * 60 * 60 * 1000;
+// let s = keyin + bugun + birKun;
+// console.log(new Date(s));
+// console.log(new Date(1972, 1, 29));
+
+// console.log(now.setFullYear(2040));
+// console.log(now);
+// console.log(hozir.getDate());
+// console.log(hozir.getDay());
+// console.log(hozir.getHours());
+// console.log(hozir.getFullYear());
+// let myBirthday = new Date(2001, 9, 20);
+// console.log(myBirthday.getTime());
