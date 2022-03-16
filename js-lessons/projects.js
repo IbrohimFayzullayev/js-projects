@@ -216,3 +216,100 @@
 // console.log(hozir.getFullYear());
 // let myBirthday = new Date(2001, 9, 20);
 // console.log(myBirthday.getTime());
+
+// // 16.03.2022
+
+// let sana1 = prompt('Birinchi sanani kirit:');
+// let sana2 = prompt('Ikkinchi sanani kirit:');
+// let milli = function (sana) {
+//   let [yil, oy, kun] = [...sana];
+//   return new Date(yil, oy - 1, kun).getTime();
+// };
+// let mySana = function (sana1, sana2) {
+//   let bir = sana1.split('/').reverse();
+//   let ikki = sana2.split('/').reverse();
+//   let mil1 = milli([...bir]);
+//   let mil2 = milli([...ikki]);
+//   let farq = mil2 - mil1;
+//   let farqSana = new Date(farq);
+//   console.log(farqSana);
+// };
+// mySana(sana1, sana2);
+
+// let dateNow = new Date(2025, 2, 11).getTime();
+// let kun10 = dateNow + 10 * 24 * 60 * 60 * 1000;
+// let date10 = new Date(kun10).toISOString();
+// // console.log(date10);
+// let options = {
+//   day: "numeric",
+//   month: "numeric",
+//   weekday: "long",
+//   year: "numeric",
+//   hour: "numeric",
+//   minute: "numeric",
+// };
+// let davlat = navigator.language;
+// console.log(davlat);
+// let hozirInternational = new Date();
+// let inter = new Intl.DateTimeFormat("davlat", options).format(
+//   hozirInternational
+// );
+// console.log(inter);
+
+// let sozlama = {
+//   style: "decimal",
+//   unit: "celsius",
+//   currency: "EUR",
+//   useGrouping: false,
+// };
+
+// let a = 121545522121.23;
+// let convert = new Intl.NumberFormat("de-DT", sozlama).format(a);
+// console.log(convert);
+
+// function salom() {
+//   console.log("keyinroq chiq");
+// }
+// setTimeout(salom, 5000);
+// function alik() {
+//   console.log("doimo chiqib tur");
+// }
+// setInterval(alik, 3000);
+// let a = prompt("a ni kirit");
+// let b = prompt("b ni kirit");
+// setTimeout(
+//   function (a, b) {
+//     console.log("call back" + " " + a + " " + b);
+//   },
+//   5000,
+//   a,
+//   b
+// );
+// let g = prompt("Yoshingni kirit");
+// let t = setTimeout(
+//   function (g) {
+//     console.log(`Sizning yoshingiz-${g}da`);
+//   },
+//   3000,
+//   g
+// );
+// if (g > 18) {
+//   clearTimeout(t);
+// }
+let f = 59;
+let h = 2;
+let vaqt = setInterval(
+  function () {
+    if (f == -1) {
+      f = 59;
+      h--;
+    }
+    console.log(`${h}:${f}`);
+    f--;
+    if (f == -1 && h == 0) {
+      clearInterval(vaqt);
+    }
+  },
+  20,
+  f
+);
