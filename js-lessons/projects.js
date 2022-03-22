@@ -296,20 +296,20 @@
 // if (g > 18) {
 //   clearTimeout(t);
 // }
-let f = 59;
-let h = 2;
-let vaqt = setInterval(
-  function () {
-    if (f == -1) {
-      f = 59;
-      h--;
-    }
-    console.log(`${h}:${f}`);
-    f--;
-    if (f == -1 && h == 0) {
-      clearInterval(vaqt);
-    }
-  },
-  20,
-  f
-);
+// let f = 59;
+// let h = 2;
+// let vaqt = setInterval(
+//   function () {
+//     if (f == -1) {
+//       f = 59;
+//       h--;
+//     }
+//     console.log(`${h}:${f}`);
+//     f--;
+//     if (f == -1 && h == 0) {
+//       clearInterval(vaqt);
+//     }
+//   },
+//   20,
+//   f
+// );
