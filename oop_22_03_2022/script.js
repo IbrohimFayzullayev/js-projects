@@ -48,18 +48,20 @@
 // };
 // console.log(Rectangle.name);
 
-class rec {
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
-  }
-  get area() {
-    return this.calcArea();
-  }
-  calcArea() {
-    return this.height * this.width;
-  }
-}
+// class rec {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+//   get area() {
+//     return this.calcArea();
+//   }
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+// }
 
-const square = new rec(10, 10);
-console.log(square.area);
+// const square = new rec(10, 10);
+// console.log(square.area);
+
+// // 23.03.2022
