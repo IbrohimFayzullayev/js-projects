@@ -66,39 +66,39 @@
 
 // // 23.03.2022
 
-const Person = function (firstName, birthYear) {
-  this.firstName = firstName;
-  this.birthYear = birthYear;
-};
+// const Person = function (firstName, birthYear) {
+//   this.firstName = firstName;
+//   this.birthYear = birthYear;
+// };
 
-const jonas = new Person("Jonas", 2001);
-console.log(jonas);
-// new Person("john", 1998);
+// const jonas = new Person("Jonas", 2001);
+// console.log(jonas);
+// // new Person("john", 1998);
 
-// 1.New {} is created
-// 2.function is calles, this = {}
-// 3. {} linked to prototype
-// 4. function automacially return {}
+// // 1.New {} is created
+// // 2.function is calles, this = {}
+// // 3. {} linked to prototype
+// // 4. function automacially return {}
 
-const matilda = new Person("Matilda", 2015);
-const jack = new Person("Jack", 2002);
-console.log(matilda, jack);
+// const matilda = new Person("Matilda", 2015);
+// const jack = new Person("Jack", 2002);
+// console.log(matilda, jack);
 
-console.log(matilda instanceof Person);
+// console.log(matilda instanceof Person);
 
-// Prototypes
+// // Prototypes
 
-console.log(Person.prototype);
+// console.log(Person.prototype);
 
-Person.prototype.calcAge = function () {
-  console.log(2037 - this.birthYear);
-};
-jonas.calcAge();
-matilda.calcAge();
+// Person.prototype.calcAge = function () {
+//   console.log(2037 - this.birthYear);
+// };
+// jonas.calcAge();
+// matilda.calcAge();
 
-console.log(jonas.__proto__);
-console.log(jonas.__proto__ === Person.prototype);
+// console.log(jonas.__proto__);
+// console.log(jonas.__proto__ === Person.prototype);
 
-console.log(Person.prototype.isPrototypeOf(jonas));
-console.log(Person.prototype.isPrototypeOf(matilda));
-console.log(Person.prototype.isPrototypeOf(Person));
+// console.log(Person.prototype.isPrototypeOf(jonas));
+// console.log(Person.prototype.isPrototypeOf(matilda));
+// console.log(Person.prototype.isPrototypeOf(Person));
