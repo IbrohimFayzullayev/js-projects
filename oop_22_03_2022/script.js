@@ -225,3 +225,35 @@
 // console.log(work);
 // console.log(work.wait());
 // console.log(Worker.prototype);
+
+// Inheritance in Object.create
+
+// const Person = {
+//   hisobla() {
+//     return 2022 - this.yosh;
+//   },
+//   qush(ism, yosh) {
+//     this.ism = ism;
+//     this.yosh = yosh;
+//   },
+// };
+
+// const Student = Object.create(Person);
+
+// Student.qush = function (ism, yosh, fakultet) {
+//   Person.qush.call(this, ism, yosh);
+//   this.fakultet = fakultet;
+// };
+
+// Student.tanish = function () {
+//   console.log(`I am ${this.ism}`);
+// };
+// Student.qush("John", 20);
+
+// Student.tanish();
+// console.log(Student.hisobla());
+// Student.qush("Josefina", 25);
+// Student.tanish();
+// console.log(Student.hisobla());
+// // console.log(Person.__proto__);
+// // console.log(Student.__proto__);
