@@ -180,3 +180,48 @@
 // console.log(davlat.ageCalc());
 // console.log(davlat.__proto__.__proto__.__proto__);
 // console.log(NaN === NaN);
+
+// // Inheritance in class
+
+// class Person {
+//   constructor(ism, yosh, bosh) {
+//     this.ism = ism;
+//     this.yosh = yosh;
+//     this.bosh = bosh;
+//   }
+//   yoshniHisobla() {
+//     return 2022 - this.yosh;
+//   }
+// }
+// Person.prototype.fakFind = function () {
+//   return this.fakultet;
+// };
+// class Talaba extends Person {
+//   constructor(ism, yosh, fakultet) {
+//     super(ism, yosh);
+//     this.fakultet = fakultet;
+//   }
+// }
+// let s = new Talaba("John", 20, "Telecom");
+// console.log(s.yoshniHisobla());
+// console.log(s.fakFind());
+// console.log(s);
+// Talaba.prototype.wait = function () {
+//   return this.fakultet;
+// };
+// class Worker extends Talaba {
+//   constructor(ism, yosh, fakultet, maosh) {
+//     super(ism, yosh, fakultet);
+//     this.maosh = maosh;
+//   }
+// }
+
+// Worker.prototype.hisob = function () {
+//   return this.maosh * 12;
+// };
+
+// let work = new Worker("Abbos", 21, "DIF", 200);
+// console.log(work.hisob());
+// console.log(work);
+// console.log(work.wait());
+// console.log(Worker.prototype);
