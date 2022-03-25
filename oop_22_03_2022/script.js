@@ -120,3 +120,63 @@
 // let myCar = new Car("Ford", 2014);
 // console.log(myCar);
 // console.log(`my car age is ${myCar.age()}`);
+
+// // 25.03.2022 Lesson
+
+// String;
+// let arr = [2, 2, 5, 6, 7];
+// arr.push(8);
+// console.log(arr);
+
+// console.log(Array.prototype);
+
+// const me = {
+//   hisobla() {
+//     return 2022 - this.yosh;
+//   },
+// };
+
+// let umid = Object.create(me);
+// umid.yosh = 20;
+// console.log(umid.hisobla());
+
+// //  Inheritance from constructor class
+// const Person = function (ism, yosh) {
+//   this.ism = ism;
+//   this.yosh = yosh;
+// };
+// Person.prototype.ageCalc = function () {
+//   return 2022 - this.yosh;
+// };
+// const Talaba = function (ism, yosh, fakultet, stipendiya) {
+//   Person.call(this, ism, yosh);
+//   this.fakultet = fakultet;
+//   this.stipendiya = stipendiya;
+// };
+// Talaba.prototype = Object.create(Person.prototype);
+// Talaba.prototype.fakTop = function () {
+//   return this.fakultet;
+// };
+// let umid = new Talaba("Umid", 20, "AI", 2000000);
+// console.log(umid.fakTop());
+// console.log(umid.ageCalc());
+
+// const Teacher = function (ism, yosh, oylik, fan) {
+//   Person.call(this, ism, yosh);
+//   this.oylik = oylik;
+//   this.fan = fan;
+// };
+// Teacher.prototype = Object.create(Person.prototype);
+// Teacher.prototype.dollar = function () {
+//   return `${Math.round(this.oylik / 11500)}$`;
+// };
+// Teacher.prototype.fanTop = function () {
+//   return this.fan;
+// };
+
+// let davlat = new Teacher("Davlatbek", 19, 4_000_000, "Dasturlash");
+// console.log(davlat.dollar());
+// console.log(Teacher.prototype);
+// console.log(davlat.ageCalc());
+// console.log(davlat.__proto__.__proto__.__proto__);
+// console.log(NaN === NaN);
