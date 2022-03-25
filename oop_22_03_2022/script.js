@@ -257,3 +257,41 @@
 // console.log(Student.hisobla());
 // // console.log(Person.__proto__);
 // // console.log(Student.__proto__);
+
+// // Encapsulation: Protected Properties and Methods
+
+// class University {
+//   #nomi;
+//   constructor(nomi, soni) {
+//     this.#nomi = nomi;
+//     this.soni = soni;
+//     this._pinCode = 1111;
+//   }
+//   parolUzgar(val) {
+//     this._pinCode = "3" + val + "3";
+//   }
+//   #nomiUzgar(val) {
+//     this.#nomi = val;
+//   }
+//   #nomiUzgar2(val) {
+//     this.#nomiUzgar(val);
+//   }
+//   nomiUzgar3(val) {
+//     this.#nomiUzgar2(val);
+//   }
+// }
+
+// let tatu = new University("TATU", 10000);
+// tatu.parolUzgar(2222);
+// tatu.nomiUzgar3("TUIT");
+// console.log(tatu);
+// //  Output = University {soni: 10000, _pinCode: '322223', #nomiUzgar: ƒ, #nomiUzgar2: ƒ, #nomi: 'TUIT'};
+
+// class Fakultet extends University {
+//   constructor(nomi, soni, dekani) {
+//     super(nomi, soni);
+//     this.dekani = dekani;
+//   }
+// }
+// const kif = new Fakultet("KIF", 200, "Abdulla");
+// console.log(kif);
