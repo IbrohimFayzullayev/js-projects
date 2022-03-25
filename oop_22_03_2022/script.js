@@ -102,3 +102,21 @@
 // console.log(Person.prototype.isPrototypeOf(jonas));
 // console.log(Person.prototype.isPrototypeOf(matilda));
 // console.log(Person.prototype.isPrototypeOf(Person));
+//
+
+// // 25.03.2022
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   age() {
+//     let date = new Date();
+//     return date.getFullYear() - this.year;
+//   }
+// }
+
+// let myCar = new Car("Ford", 2014);
+// console.log(myCar);
+// console.log(`my car age is ${myCar.age()}`);
