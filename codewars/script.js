@@ -710,3 +710,32 @@
 // function dividedBy() {}
 
 // console.log(eight(plus(three())));
+
+// let arr = [2, 3, 1, 4, 5, 11];
+// console.log(arr.sort((a, b) => a - b));
+// for (let val of arr.entries) {
+//   arr.sort((a, b) => a - b);
+// }
+// let arr = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5];
+// for (let i = 0; i < arr.length; i++) {
+//   let count = 1;
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] == arr[j]) {
+//       count++;
+//     }
+//   }
+//   for (let j = i - 1; j >= 0; j--) {
+//     if (arr[i] == arr[j]) {
+//       count++;
+//     }
+//   }
+//   if (count % 2 == 1) {
+//     console.log(arr[i]);
+//     break;
+//   }
+// }
+// let arr1 = [1, 2, 2, 3, 4, 5];
+// let arr2 = [6, 1, 7, 8, 9, 10];
+// let arrs = new Set([...arr1, ...arr2]);
+// let arr = new Array(...arrs);
+// console.log(arr.sort((a, b) => a - b));
