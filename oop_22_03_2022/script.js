@@ -295,3 +295,28 @@
 // }
 // const kif = new Fakultet("KIF", 200, "Abdulla");
 // console.log(kif);
+
+// // 26.03.2022
+
+// Chaining methods
+
+// class Mashina {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   nomniOl() {
+//     console.log(this.name);
+//   }
+//   nomniUzgartir(val) {
+//     this.name = val;
+//     return this;
+//   }
+//   qush() {
+//     this.name = this.name + "SS";
+//     return this;
+//   }
+// }
+// let nexia = new Mashina("Nexia-1");
+
+// nexia.nomniUzgartir("Nexia-2").qush().nomniOl();
+// console.log(nexia);
