@@ -739,3 +739,29 @@
 // let arrs = new Set([...arr1, ...arr2]);
 // let arr = new Array(...arrs);
 // console.log(arr.sort((a, b) => a - b));
+
+// ******************************************** //
+
+// function oneCharDifference(s1, s2) {
+//   let ar1 = s1.split("");
+//   let ar2 = s2.split("");
+//   let s = new Set(ar1.concat(ar2));
+//   let arr = [...s];
+//   if (s1.length == s2.length) {
+//     if (s1.length + 1 == arr.length) {
+//       console.log(true);
+//     } else {
+//       console.log(false);
+//     }
+//   } else if (Math.abs(s1.length - s2.length) === 1) {
+//     if (arr.length == s1.length || arr.length == s2.length) {
+//       console.log(true);
+//     } else {
+//       console.log(false);
+//     }
+//   } else {
+//     console.log(false);
+//   }
+// }
+
+// oneCharDifference("grant", "gren");
