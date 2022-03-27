@@ -765,3 +765,25 @@
 // }
 
 // oneCharDifference("grant", "gren");
+
+// *********************************************** //
+// let data = [
+//   [2, 5],
+//   [3, 4],
+//   [8, 7],
+// ];
+// function processData(data) {
+//   let arr = data.flat();
+//   let devide = 1;
+//   for (let i = 0; i < arr.length; i += 2) {
+//     let s = arr[i] - arr[i + 1];
+//     devide *= s;
+//   }
+//   console.log(devide);
+// }
+// processData(data);
+// processData([
+//   [2, 9],
+//   [2, 4],
+//   [7, 5],
+// ]);
