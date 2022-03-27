@@ -794,8 +794,8 @@
 //   console.log(password);
 // }
 // validate("a2.d412");
-let str = "a2.d412";
-for (let i = 0; i < str.length; i++) {}
-let a = "g";
-let s = Number(a);
-console.log(s === NaN);
+// let str = "a2.d412";
+// for (let i = 0; i < str.length; i++) {}
+// let a = "g";
+// let s = Number(a);
+// console.log(s === NaN);
