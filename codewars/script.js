@@ -799,3 +799,53 @@
 // let a = "g";
 // let s = Number(a);
 // console.log(s === NaN);
+
+// 14.04.2022
+
+function solution(number) {
+  let sum = 0;
+  if (number > 0) {
+    for (let i = 3; i < number; i++) {
+      if (i % 3 === 0) {
+        sum += i;
+      } else if (i % 5 === 0) {
+        sum += i;
+      }
+    }
+  }
+  return sum;
+}
+// console.log(solution(-10));
+const arr = [
+  [1, 4],
+  [7, 10],
+  [3, 5],
+];
+function sumIntervals(intervals) {
+  // console.log(intervals !== undefined);
+  if (intervals !== undefined) {
+    let set = new Set();
+    for (let i = 0; i < intervals.length; i++) {
+      for (let j = intervals[i][0] + 1; j <= intervals[i][1]; j++) {
+        set.add(j);
+      }
+    }
+    console.log(set.size);
+  } else {
+    console.log(undefined);
+  }
+}
+
+sumIntervals();
+sumIntervals([
+  [1, 2],
+  [6, 10],
+  [11, 15],
+]); // => 9
+sumIntervals([
+  [1, 5],
+  [10, 20],
+  [1, 6],
+  [16, 19],
+  [5, 11],
+]); // => 19
